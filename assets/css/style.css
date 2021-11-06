@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Parisienne";
+  src: url("../fonts/Parisienne-Regular.ttf") format("truetype");
+}
+
+h1 {
+	text-align: center;
+	/* font-family: arial; */
+	font-family: 'Parisienne', serif;
+	font-size: 5em;
+}
