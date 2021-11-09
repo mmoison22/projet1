@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Parimis - Réservation</title>
 </head>
+
 <body>
-    
+    <form action="/confirmation.html" method="post">
+        <fieldset>
+            <div class="form__contact-group"><label for="name">Prénom : &nbsp;</label><input type="text" id="name"
+                    placeholder="Nom" min="3" max="30" required></div>
+                    <div class="form__contact-group"><label for="name">Nom : &nbsp;</label><input type="text" id="name"
+                        placeholder="Prénom" min="3" max="30" required></div>
+            <div class="form__contact-group"><label for="email">Votre email : &nbsp;</label><input type="email"
+                    id="email" placeholder="Courriel" required></div>
+            <div class="form__contact-group"><label for="phone">Téléphone : &nbsp;</label><input type="tel" id="phone"
+                    placeholder="06 12 34 56 78"></div>
+            <div class="form__contact-group"><label for="message">Laissez-moi un message</label><textarea name="message"
+                    id="message" cols="30" rows="10" minlength="10" maxlength="240" placeholder="Message"
+                    required></textarea></div>
+            <div class="form__contact-button">
+                <input class="btn btn-submit" type="submit" value="Envoyer">
+                <input class="btn btn-reset" type="reset" value="Effacer">
+
+        </fieldset>
+    </form>
+
 </body>
+
 </html>
