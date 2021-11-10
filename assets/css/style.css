@@ -1,6 +1,10 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Parisienne";
   src: url("../fonts/Parisienne-Regular.ttf") format("truetype"); }
+figure {
+  margin: 0; }
+
 .nav-contenair {
   display: flex;
   justify-content: flex-start;
@@ -8,12 +12,19 @@
   position: relative;
   margin: 8px; }
 
-.nav-mobile::before {
+.nav-menu-icon::before {
   font-family: "Material Icons";
-  content: "\e5d2";
-  font-size: 2em; }
+  content: "";
+  font-size: 2em;
+  color: #757575; }
 
-.nav-desktop {
+.nav-close-icon::before {
+  font-family: "Material Icons";
+  content: "";
+  font-size: 2em;
+  color: #757575; }
+
+.nav-side {
   display: none; }
 
 nav ul li {
@@ -21,13 +32,8 @@ nav ul li {
   nav ul li a {
     text-decoration: none; }
 
-.header-container {
-  position: relative; }
-
 .header-container img {
-  position: absolute;
-  width: 100%;
-  left: 0; }
+  width: 100%; }
 
 h1 {
   position: absolute;
@@ -36,5 +42,15 @@ h1 {
   font-family: "Parisienne", serif;
   font-size: 1.8em;
   color: goldenrod; }
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px; }
+  .footer__social-item {
+    font-size: 25px; }
+    .footer__social-item a {
+      color: #00258C; }
 
 /*# sourceMappingURL=style.css.map */
