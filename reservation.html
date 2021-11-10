@@ -2,32 +2,79 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Parimis - Réservation</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Hotel Parimis - Réservation</title>
 </head>
 
 <body>
-    <form action="/confirmation.html" method="post">
-        <fieldset>
-            <div class="form__contact-group"><label for="name">Prénom : &nbsp;</label><input type="text" id="name"
-                    placeholder="Nom" min="3" max="30" required></div>
-                    <div class="form__contact-group"><label for="name">Nom : &nbsp;</label><input type="text" id="name"
-                        placeholder="Prénom" min="3" max="30" required></div>
-            <div class="form__contact-group"><label for="email">Votre email : &nbsp;</label><input type="email"
-                    id="email" placeholder="Courriel" required></div>
-            <div class="form__contact-group"><label for="phone">Téléphone : &nbsp;</label><input type="tel" id="phone"
-                    placeholder="06 12 34 56 78"></div>
-            <div class="form__contact-group"><label for="message">Laissez-moi un message</label><textarea name="message"
-                    id="message" cols="30" rows="10" minlength="10" maxlength="240" placeholder="Message"
-                    required></textarea></div>
-            <div class="form__contact-button">
-                <input class="btn btn-submit" type="submit" value="Envoyer">
-                <input class="btn btn-reset" type="reset" value="Effacer">
+        <form action="/confirmation.html" method="post">
+                <fieldset>
+                        <p>Vos coordonnées</p>
+                        <div class="form__contact-group"><label for="name">Prénom &nbsp;</label>
+                                <input type="text" id="name" placeholder="Prénom" min="3" max="30" required>
+                        </div>
+                        <div class="form__contact-group"><label for="name">Nom &nbsp;</label><input type="text"
+                                        id="surname" placeholder="Nom" min="3" max="50" required></div>
+                        <div class="form__contact-group"><label for="email">Votre courriel &nbsp;</label><input
+                                        type="email" id="email" placeholder="Courriel" required></div>
+                        <div class="form__contact-group"><label for="email">Veuillez confirmer votre courriel
+                                        &nbsp;</label><input type="email" id="email"
+                                        placeholder="Confirmation du courriel" required></div>
+                        <div class="form__contact-group"><label for="phone">Téléphone &nbsp;</label><input type="tel"
+                                        id="phone" placeholder="06 12 34 56 78"></div>
+                        <div class="form__contact-group"><label for="name">Adresse &nbsp;</label>
+                                                <input type="text" id="adress" placeholder="Adresse" min="3" max="100" required></div>
+                        <p>Votre réservation</p>
+                        <div class="form__contact-group">
+                                <div id="room_selection">
+                                        <input type="checkbox" name="room" id="chambre1" value="Chambre 1">
+                                        <label for="chambre1">Chambre 1, nombre de chambres : </label>
+                                        <input type="number" id="room_number" name="room_number" step="1" min="0"
+                                                max="10" value="0">
+                                </div>
+                                <div id="room_selection">
+                                        <input type="checkbox" name="room" id="chambre2" value="Chambre 2">
+                                        <label for="chambre2">Chambre 2, nombre de chambres : </label>
+                                        <input type="number" id="room_number" name="room_number" step="1" min="0"
+                                                max="10" value="0">
+                                </div>
+                                <div id="room_selection">
+                                        <input type="checkbox" name="room" id="chambre3" value="Chambre 3">
+                                        <label for="chambre3">Chambre 3, nombre de chambres : </label>
+                                        <input type="number" id="room_number" name="room_number" step="1" min="0"
+                                                max="10" value="0">
+                                </div>
+                                <div id="room_selection">
+                                        <input type="checkbox" name="room" id="chambre4" value="Chambre 4">
+                                        <label for="chambre4">Chambre 4, nombre de chambres : </label>
+                                        <input type="number" id="room_number" name="room_number" step="1" min="0"
+                                                max="10" value="0">
+                                </div>
+                        </div>
+                        <div class="form__contact-group">
+                                <label for="arrival">Date d'arrivée </label>
+                                <input type="date" name="arrival_date" id="arrival_date">             
+                        </div>
+                        <div class="form__contact-group">
+                                <label for="arrival">Date de départ </label>
+                                <input type="date" name="departure_date" id="departure_date">             
+                        </div>
+                        <p>Informations complémentaires</p>
+                        <p>Paiement</p>
 
-        </fieldset>
-    </form>
+                        <div class="form__contact-group"><label for="message">Laissez-nous un message</label><textarea
+                                        name="message" id="message" cols="30" rows="10" minlength="10" maxlength="240"
+                                        placeholder="Message" required></textarea></div>
+                        <div class="form__contact-button">
+                                <input class="btn btn-submit" type="submit" value="Réserver">
+                                <input class="btn btn-reset" type="reset" value="Effacer">
+                        </div>
+                </fieldset>
+        </form>
 
 </body>
 
