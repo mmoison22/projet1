@@ -1,6 +1,6 @@
 function reverseDisplay (x) {
     if (x.style.display == "none") {
-        x.style.display = "unset";
+        x.style.display = "block";
     } else {
         x.style.display = "none";
     }
@@ -22,6 +22,4 @@ function toggleSideNav() {
 
 // document.onclick = toggleSideNav;
 // document.getElementById("nav-container").onclick = toggleSideNav;
-// document.body.addEventListener("click", toggleSideNav);
 // document.getElementById("nav-container").addEventListener("click", toggleSideNav);
-//   document.getElementById("nav-menu-icon").addEventListener("click", toggleSideNav);

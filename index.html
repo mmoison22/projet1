@@ -17,18 +17,20 @@
 	<header>
 		<div class="nav-contenair">
 			<div class="nav-icons" onclick="toggleSideNav()">
-				<p class="nav-menu-icon" id="nav-menu-icon" style="display: unset;"></p>
+				<p class="nav-menu-icon" id="nav-menu-icon" style="display: block;"></p>
 				<p class="nav-close-icon" id="nav-close-icon" style="display: none;"></p>
 			</div>
 			<h1>Hôtel Parimis</h1>
 		</div>
-		<nav class="nav-side" id="nav-side" style="display: none">
-			<ul>
-				<li><a href="index.html"><span class="material-icons-outlined">Accueil</span></a></li>
-				<li><a href="chambres.html">Chambres</a></li>
-				<li><a href="reservation.html">Réservation</a></li>
-			</ul>
-		</nav>
+		<div class="nav-menu">
+			<nav class="nav-side" id="nav-side" style="display: none">
+				<ul>
+					<a href="index.html"><li>Accueil</li></a>
+					<a href="chambres.html"><li>Chambres</li></a>
+					<a href="reservation.html"><li>Réservation</li></a>
+				</ul>
+			</nav>
+		</div>
 		<div class="header-container">
 			<figure>
 				<!--

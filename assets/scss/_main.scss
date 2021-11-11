@@ -2,13 +2,18 @@ figure {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .nav-contenair {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     position: relative;
     // background-color: teal;
-    margin: 8px;
+    margin-left: 8px;
+    height: 60px;
 }
 
 .nav-menu-icon {
@@ -23,20 +28,37 @@ figure {
     }
 }
 
-.nav-side {
-    // display: block;
-    // height: ;
-}
-
-nav {
+.nav-side {    
     ul {
-        li {
-            list-style: none;
-            a {
-                text-decoration: none;
-            }
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0;
+        margin: 0;
+        gap: 1px;
+        line-height: 1.5;
+        font-family: 'Open Sans';
+        border-bottom: 1px $icon_color solid;
+    }
+    li {
+        text-align: center;
+        list-style: none;
+        background-color: $primary_color;
+        &:hover {
+            background-color: white;
         }
     }
+    a {
+        color: white;
+        text-transform: capitalize;
+        &:hover{
+            color: $primary_color;
+        }
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: column;
 }
 
 .header-container {
@@ -59,10 +81,7 @@ h1 {
     font-family: "Parisienne", serif;
     font-size: 1.8em;
     color: goldenrod;
-    // text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-    // top: 0%;
-    // left: 50%;
-    // transform: translate(-50%, 100%);
+    margin: 0;
 }
 
 .footer__social {

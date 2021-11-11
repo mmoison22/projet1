@@ -2,15 +2,22 @@
 @font-face {
   font-family: "Parisienne";
   src: url("../fonts/Parisienne-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype"); }
 figure {
   margin: 0; }
+
+a {
+  text-decoration: none; }
 
 .nav-contenair {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  margin: 8px; }
+  margin-left: 8px;
+  height: 60px; }
 
 .nav-menu-icon::before {
   font-family: "Material Icons";
@@ -24,10 +31,30 @@ figure {
   font-size: 2em;
   color: #757575; }
 
-nav ul li {
-  list-style: none; }
-  nav ul li a {
-    text-decoration: none; }
+.nav-side ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0;
+  margin: 0;
+  gap: 1px;
+  line-height: 1.5;
+  font-family: 'Open Sans';
+  border-bottom: 1px #757575 solid; }
+.nav-side li {
+  text-align: center;
+  list-style: none;
+  background-color: #daa520; }
+  .nav-side li:hover {
+    background-color: white; }
+.nav-side a {
+  color: white;
+  text-transform: capitalize; }
+  .nav-side a:hover {
+    color: #daa520; }
+
+header {
+  display: flex;
+  flex-direction: column; }
 
 .header-container img {
   width: 100%; }
@@ -38,7 +65,8 @@ h1 {
   transform: translateX(-50%);
   font-family: "Parisienne", serif;
   font-size: 1.8em;
-  color: goldenrod; }
+  color: goldenrod;
+  margin: 0; }
 
 .footer__social {
   display: flex;
