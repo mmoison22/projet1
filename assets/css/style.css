@@ -23,6 +23,10 @@ main {
 footer {
   grid-area: C; }
 
+.chambres {
+  background-color: rgba(218, 165, 32, 0.1);
+  padding: 1px; }
+
 figure {
   margin: 0; }
 
@@ -37,7 +41,7 @@ h2 {
 section p {
   font-family: "Open Sans";
   font-size: 11px;
-  margin: 10px; }
+  margin: 20px; }
 section img {
   width: 90%;
   margin-left: 5%; }

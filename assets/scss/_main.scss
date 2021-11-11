@@ -24,6 +24,11 @@ footer {
     grid-area: C;
 }
 
+.chambres {
+    background-color: rgba($color: $primary_color, $alpha: 0.1);
+    padding: 1px;
+}
+
 figure {
     margin: 0;
 }
@@ -42,7 +47,7 @@ section {
     p {
     font-family: "Open Sans";
     font-size: 11px;
-    margin: 10px;
+    margin: 20px;
     }
 
     img {
