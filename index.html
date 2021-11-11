@@ -9,23 +9,26 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+	<script src="./assets/js/scripts.js"></script>
 	<title>Hôtel Parimis - Accueil</title>
 </head>
 
 <body>
 	<header>
 		<div class="nav-contenair">
-			<p class="nav-menu-icon"></p>
-			<p class="nav-close-icon"></p>
-			<nav class="nav-side">
-				<ul>
-					<li><a href="index.html"><span class="material-icons-outlined">Accueil</span></a></li>
-					<li><a href="chambres.html">Chambres</a></li>
-					<li><a href="reservation.html">Réservation</a></li>
-				</ul>
-			</nav>
+			<div class="nav-icons" onclick="toggleSideNav()">
+				<p class="nav-menu-icon" id="nav-menu-icon" style="display: unset;"></p>
+				<p class="nav-close-icon" id="nav-close-icon" style="display: none;"></p>
+			</div>
 			<h1>Hôtel Parimis</h1>
 		</div>
+		<nav class="nav-side" id="nav-side" style="display: none">
+			<ul>
+				<li><a href="index.html"><span class="material-icons-outlined">Accueil</span></a></li>
+				<li><a href="chambres.html">Chambres</a></li>
+				<li><a href="reservation.html">Réservation</a></li>
+			</ul>
+		</nav>
 		<div class="header-container">
 			<figure>
 				<!--
@@ -41,24 +44,38 @@
 
 	</header>
 
-	<main><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis explicabo, dolores tenetur expedita nesciunt esse eos reiciendis aut, dolorum perspiciatis illum mollitia ducimus eveniet? Obcaecati eius iste magni totam!</p>
-	<p><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium temporibus quasi ipsum velit, harum, ullam soluta neque libero, veritatis voluptatum impedit? Atque ad corporis facilis optio vel pariatur ab minus!</span><span>Laboriosam dignissimos officiis dolores! Quam cupiditate enim, voluptas praesentium vitae eveniet ullam impedit natus, laboriosam voluptatem quae beatae, provident dignissimos placeat quos labore aspernatur adipisci in perspiciatis ipsam aperiam exercitationem?</span><span>Accusantium tempora, culpa quo nesciunt natus eos libero ea iste magnam consectetur sit consequuntur cum labore explicabo! Ratione aperiam eum tempora repellat explicabo laborum ut eos, consectetur est beatae dolorum.</span></p>
+	<main>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officiis explicabo, dolores tenetur
+			expedita nesciunt esse eos reiciendis aut, dolorum perspiciatis illum mollitia ducimus eveniet? Obcaecati
+			eius iste magni totam!</p>
+		<p><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium temporibus quasi ipsum velit,
+				harum, ullam soluta neque libero, veritatis voluptatum impedit? Atque ad corporis facilis optio vel
+				pariatur ab minus!</span><span>Laboriosam dignissimos officiis dolores! Quam cupiditate enim, voluptas
+				praesentium vitae eveniet ullam impedit natus, laboriosam voluptatem quae beatae, provident dignissimos
+				placeat quos labore aspernatur adipisci in perspiciatis ipsam aperiam
+				exercitationem?</span><span>Accusantium tempora, culpa quo nesciunt natus eos libero ea iste magnam
+				consectetur sit consequuntur cum labore explicabo! Ratione aperiam eum tempora repellat explicabo
+				laborum ut eos, consectetur est beatae dolorum.</span></p>
 	</main>
 
 	<footer>
 		<div class="footer__social">
 			<div class="footer__social-item"><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></div>
-            <div class="footer__social-item"><a href="#" title="Facebook"><i class="fab fa-facebook"></i></a></div>
-            <div class="footer__social-item"><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></div>
+			<div class="footer__social-item"><a href="#" title="Facebook"><i class="fab fa-facebook"></i></a></div>
+			<div class="footer__social-item"><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></div>
 			<div class="footer__social-item"><a href="#" title="Youtube"><i class="fab fa-youtube"></i></a></div>
 			<div class="footer__social-item"><a href="#" title="Pinterest"><i class="fab fa-pinterest-p"></i></a></div>
-			<div class="footer__social-item"><a href="#" title="Youtube"><img src="./assets/img/brands/youtube.svg"></i></a></div>
-			<div class="footer__social-item"><a href="#" title="Facebook"><img src="./assets/img/brands/facebook.svg"></i></a></div>
-			<div class="footer__social-item"><a href="#" title="Twitter"><img src="./assets/img/brands/twitter.svg"></i></a></div>
-			<div class="footer__social-item"><a href="#" title="Pinterest"><img src="./assets/img/brands/pinterest.svg"></i></a></div>
-        </div>
-        <div class="copy">Copyright &#169; 2022</div>
-		</footer>
+			<div class="footer__social-item"><a href="#" title="Youtube"><img
+						src="./assets/img/brands/youtube.svg"></i></a></div>
+			<div class="footer__social-item"><a href="#" title="Facebook"><img
+						src="./assets/img/brands/facebook.svg"></i></a></div>
+			<div class="footer__social-item"><a href="#" title="Twitter"><img
+						src="./assets/img/brands/twitter.svg"></i></a></div>
+			<div class="footer__social-item"><a href="#" title="Pinterest"><img
+						src="./assets/img/brands/pinterest.svg"></i></a></div>
+		</div>
+		<div class="copy">Copyright &#169; 2022</div>
+	</footer>
 	</div>
 
 	</footer>
