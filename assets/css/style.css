@@ -1,5 +1,6 @@
 .form__contact-group {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 1em; }
 
 /*# sourceMappingURL=style.css.map */
