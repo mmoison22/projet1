@@ -19,23 +19,14 @@
   flex-direction: column;
   margin: 1em; }
 
-body {
-  display: grid;
-  grid-template-areas: "A A" "B B" "C C"; }
-
 header {
-  grid-area: A;
   position: fixed;
   height: "55px";
   width: 100%;
   background-color: white; }
 
 main {
-  grid-area: B;
   margin-top: "55px"; }
-
-footer {
-  grid-area: C; }
 
 .chambres {
   background-color: rgba(218, 165, 32, 0.1);

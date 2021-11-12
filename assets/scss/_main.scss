@@ -6,17 +6,17 @@
     }
 
 } 
-body {
-    display: grid;
-    grid-template-areas: 
-    "A A"
-    "B B"
-    "C C"
-    ;
-}
+// body {
+//     display: grid;
+//     grid-template-areas: 
+//     "A A"
+//     "B B"
+//     "C C"
+//     ;
+// }
 
 header {
-    grid-area: A;
+    //grid-area: A;
     position: fixed;
     height: $header_top_margin;
     width: 100%;
@@ -24,13 +24,13 @@ header {
 }
 
 main {
-    grid-area: B;
+    //grid-area: B;
     margin-top: $header_top_margin;
 }
 
-footer {
-    grid-area: C;
-}
+// footer {
+//     //grid-area: C;
+// }
 
 .chambres {
     background-color: rgba($color: $primary_color, $alpha: 0.1);
