@@ -1,0 +1,6 @@
+@mixin my-icon($fontcode) {
+    font-family: $iconfontfamily;
+    content: $fontcode;
+	font-size: $iconsize;
+    color: $icon_color;
+}
