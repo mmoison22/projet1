@@ -5,6 +5,15 @@
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "EB Garamond";
+  src: url("../fonts/EBGaramond-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "EB Garamond Bold";
+  src: url("../fonts/EBGaramond-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("../fonts/CormorantGaramond-Regular.ttf") format("truetype"); }
 body {
   display: grid;
   grid-template-areas: "A A" "B B" "C C"; }
@@ -39,8 +48,8 @@ h2 {
   color: #00258C; }
 
 section p {
-  font-family: "Open Sans";
-  font-size: 11px;
+  font-family: "Cormorant Garamond";
+  font-size: "15px";
   margin: 20px; }
 section img {
   width: 90%;
@@ -74,7 +83,7 @@ section img {
   gap: 1px;
   line-height: 1.5;
   font-size: 13px;
-  font-family: "Open Sans";
+  font-family: "EB Garamond";
   border-bottom: 1px #757575 solid; }
 .nav-side li {
   text-align: center;

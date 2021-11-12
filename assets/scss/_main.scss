@@ -1,10 +1,9 @@
 body {
     display: grid;
-    grid-template-areas: 
-    "A A"
-    "B B"
-    "C C"
-    ;
+    grid-template-areas:
+        "A A"
+        "B B"
+        "C C";
 }
 
 header {
@@ -45,9 +44,9 @@ h2 {
 
 section {
     p {
-    font-family: "Open Sans";
-    font-size: 11px;
-    margin: 20px;
+        font-family: $main_font;
+        font-size: $main_fontsize;
+        margin: 20px;
     }
 
     img {
@@ -86,7 +85,7 @@ section {
         gap: 1px;
         line-height: 1.5;
         font-size: 13px;
-        font-family: "Open Sans";
+        font-family: $header_menu_font;
         border-bottom: 1px $icon_color solid;
     }
     li {
