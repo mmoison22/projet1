@@ -16,7 +16,7 @@
   src: url("../fonts/CormorantGaramond-Regular.ttf") format("truetype"); }
 body {
   display: grid;
-  grid-template-areas: "A A" "B B" "C C"; }
+  grid-template-areas: "A" "B" "C"; }
 
 header {
   grid-area: A;
