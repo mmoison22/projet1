@@ -5,12 +5,12 @@
 
 @font-face {
   font-family: "Martel";
-  src: url("/assets/fonts/Martel-Regular.ttf") format("truetype");
+  src: url("../fonts/Martel-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Raleway Bold";
-  src: url("/assets/fonts/Raleway-Bold.ttf") format("truetype");
+  src: url("../fonts/Raleway-Bold.ttf") format("truetype");
 }
 
 .center-box {
