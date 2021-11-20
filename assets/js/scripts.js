@@ -7,14 +7,14 @@ function reverseDisplay (x) {
 }
 
 function switchIcons() {
-    var menu = document.getElementById("nav-menu-icon");
-    var close = document.getElementById("nav-close-icon");
+    let menu = document.getElementById("nav-menu-icon");
+    let close = document.getElementById("nav-close-icon");
     reverseDisplay(menu);
     reverseDisplay(close);
 }
 
 function toggleSideNav() {
-    var x = document.getElementById("nav-side");
+    let x = document.getElementById("nav-side");
     reverseDisplay(x);
     switchIcons();
     // document.body.style.backgroundColor = "red";
