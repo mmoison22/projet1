@@ -6,12 +6,60 @@ header {
     height: 80px;
 }
 
+
 h1 {
     margin-left: 10px;
     color: $primary_color;
     font-family: "Ovo";
     font-size: 40px;
     font-weight: 100;
+}
+
+.nav-menu-icon {
+    &::before {
+        @include my-icon("\e5d2");
+    }
+}
+
+.nav-close-icon {
+    &::before {
+        @include my-icon("\e5cd");
+    }
+}
+
+.nav-side {
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0;
+        margin: 0;
+        gap: 1px;
+        line-height: 1.5;
+        font-size: 13px;
+        font-family: $header_menu_font;
+        border-bottom: 1px silver solid;
+        border-top: 1px silver solid;
+    }
+    li {
+        text-align: center;
+        list-style: none;
+        background-color: $secondary_color;
+        &:hover {
+            background-color: white;
+        }
+    }
+    a {
+        color: white;
+        text-transform: capitalize;
+        &:hover {
+            color: $secondary_color;
+        }
+    }
+}
+
+.burgermenu {
+    margin-left: 20px;
+    display: none;
 }
 
 .breadcrumb {
@@ -21,6 +69,7 @@ h1 {
     color: $secondary_color;
     ul {
         display: flex;
+        align-items: center;
         gap: 2px;
         li {
             list-style: none;

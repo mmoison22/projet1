@@ -10,14 +10,21 @@
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
     <title>Hôtel Parimis</title>
 </head>
 
 <body>
     <header class="center-box">
+        <div class="burgermenu" onclick="toggleSideNav()">
+            <p class="nav-menu-icon" id="nav-menu-icon" style="display: block;"></p>
+            <p class="nav-close-icon" id="nav-close-icon" style="display: none;"></p>
+        </div>
         <div class="breadcrumb">
             <ul>
-                <li>home</li>
+                <li><i class="fas fa-home"></i></li>
                 <li>></li>
                 <li>réservation</li>
             </ul>
@@ -30,8 +37,22 @@
             <div class="bouton-reserver center-box">R&#201;SERVER</div>
         </a>
     </header>
-
-    <body>
+    <div class="nav-menu">
+        <nav class="nav-side" id="nav-side" style="display: none">
+            <ul>
+                <a href="index.html">
+                    <li>ACCUEIL</li>
+                </a>
+                <a href="chambres.html">
+                    <li>CHAMBRES</li>
+                </a>
+                <a href="reservation.html">
+                    <li>R&#201;SERVATION</li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+    <main>
         <figure>
             <picture>
                 <source media="(max-width: 501px)" srcset="./assets/img/palace/facade-small2.webp">
@@ -115,7 +136,7 @@
 
             </form>
         </section>
-    </body>
+    </main>
     <footer>
         <div class="footer-bigcontainer">
             <div class="center-box footer-smallcontainer">
@@ -165,6 +186,7 @@
             <div class="footer__copyright">&#169; copryright 2021-2022</div>
         </div>
     </footer>
+    <script src="./assets/js/scripts.js"></script>
 </body>
 
 </html>

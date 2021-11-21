@@ -12,4 +12,21 @@
             // width: 350px;
         }
     }
+
+    .breadcrumb {
+        display: none;
+    }
+
+    .burgermenu {
+        flex: 10%;
+        display: block;
+    }
+
+    .bouton-reserver {
+        right: 1px;
+    }
+
+    .header__top {
+        padding-top: 10px;
+    }
 }
