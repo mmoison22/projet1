@@ -286,6 +286,7 @@ footer {
 .newsletter {
     flex: 2;
     flex-direction: column;
+    flex-shrink: 400px;
     gap: 5px;
 
     > * {
