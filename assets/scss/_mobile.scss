@@ -1,0 +1,15 @@
+
+// Media query for index/presentation
+@media screen and (max-width: 501px) {
+    body section {
+        margin: 0;
+    }
+
+    .room_card {
+        margin: 0;
+        div {
+            margin: 0;
+            // width: 350px;
+        }
+    }
+}

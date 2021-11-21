@@ -451,4 +451,38 @@ footer {
 .footer__copyright {
   margin: 10px;
 }
+
+@media screen and (max-width: 900px) {
+  .room_card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .room_card img, .room_card div {
+    min-width: 400px;
+    width: auto;
+  }
+  .bouton-details {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .title__text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  body section {
+    margin: 0;
+  }
+  .room_card {
+    margin: 0;
+  }
+  .room_card div {
+    margin: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
