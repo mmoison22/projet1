@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <title>Hôtel Parimis</title>
 </head>
 
@@ -25,7 +26,9 @@
             <img src="./assets/img/logo/logo2.webp" height="50" width="50" alt="Hôtel Parimis" />
             <h1>Hôtel Parimis</h1>
         </a>
-        <div class="bouton-reserver center-box">R&#201;SERVER</div>
+        <a href="./reservation.html">
+            <div class="bouton-reserver center-box">R&#201;SERVER</div>
+        </a>
     </header>
 
     <body>
@@ -40,71 +43,124 @@
         </section>
         <section>
             <h2>Nos chambres</h2>
-            <div>
-                <img src="" alt="">
+            <div class="room_card">
+                <img src="./assets/img/chambres/1.jpg" alt="Chambre Supérieure">
                 <div>
                     <h3>Chambre Supérieure</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aspernatur sit eaque fugit incidunt
                         magni voluptate et mollitia vero voluptatum nisi eligendi necessitatibus adipisci soluta quos,
                         itaque laudantium doloremque? Recusandae.</p>
-                    <p>Voir Détails</p>
+                    <a href="./chambres.html#chambre1">
+                        <p class="bouton-details center-box">VOIR D&#201;TAILS</p>
+                    </a>
                 </div>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="room_card">
+                <img src="./assets/img/chambres/2.jpg" alt="Chambre Grand Luxe">
                 <div>
                     <h3>Chambre Grand Luxe</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aspernatur sit eaque fugit incidunt
                         magni voluptate et mollitia vero voluptatum nisi eligendi necessitatibus adipisci soluta quos,
                         itaque laudantium doloremque? Recusandae.</p>
-                    <p>Voir Détails</p>
+                    <a href="./chambres.html#chambre2">
+                        <p class="bouton-details center-box">VOIR D&#201;TAILS</p>
+                    </a>
                 </div>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="room_card">
+                <img src="./assets/img/chambres/3.jpg" alt="Suite Prestige">
                 <div>
                     <h3>Suite Prestige</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aspernatur sit eaque fugit incidunt
                         magni voluptate et mollitia vero voluptatum nisi eligendi necessitatibus adipisci soluta quos,
                         itaque laudantium doloremque? Recusandae.</p>
-                    <p>Voir Détails</p>
+                    <a href="./chambres.html#chambre3">
+                        <p class="bouton-details center-box">VOIR D&#201;TAILS</p>
+                    </a>
                 </div>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="room_card">
+                <img src="./assets/img/chambres/4.jpg" alt="Suite Excellence">
                 <div>
                     <h3>Suite Excellence</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aspernatur sit eaque fugit incidunt
                         magni voluptate et mollitia vero voluptatum nisi eligendi necessitatibus adipisci soluta quos,
                         itaque laudantium doloremque? Recusandae.</p>
-                    <p>Voir Détails</p>
+                    <a href="./chambres.html#chambre4">
+                        <p class="bouton-details center-box">VOIR D&#201;TAILS</p>
+                    </a>
                 </div>
             </div>
         </section>
         <section>
-            <h3>Nous contacter</h3>
-            <div>
-                <label for="">Nom Prénom</label><input type="text">
-                <label for="">Email</label><input type="text">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
+            <h2>Nous contacter</h2>
+            <form action="">
+                <div class="center-box2 contact">
+                    <div class="contact__grid">
+                        <label for="" class="contact__label_name">Nom Prénom</label>
+                        <input type="text" class="contact__input_name">
+                        <label for="" class="contact__label_email">Email</label>
+                        <input type="text" class="contact__input_email">
+                        <textarea name="" id="" cols="50" rows="5" placeholder="Tapez votre message ici"
+                            class="contact__message"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Envoyer</button>
+                        <button type="reset">Annuler</button>
+                    </div>
+                </div>
+
+            </form>
         </section>
     </body>
     <footer>
-        <div>
-
+        <div class="footer-bigcontainer">
+            <div class="center-box footer-smallcontainer">
+                <div class="center-box media">
+                    <p>Rejoignez-nous sur :</p>
+                    <div class="footer__social-items">
+                        <div class="footer__social-item footer__icon"><a href="#" title="Instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="footer__social-item footer__icon"><a href="#" title="Facebook"><i
+                                    class="fab fa-facebook"></i></a>
+                        </div>
+                        <div class="footer__social-item footer__icon"><a href="#" title="Twitter"><i
+                                    class="fab fa-twitter"></i></a>
+                        </div>
+                        <div class="footer__social-item footer__icon"><a href="#" title="Youtube"><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
+                        <div class="footer__social-item footer__icon"><a href="#" title="Pinterest"><i
+                                    class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <form action="" method="get" class="center-box newsletter">
+                    <div class="center-vertical">
+                        <i class="far fa-envelope footer__icon"></i>
+                        <label for="" class="newsletter__text">Inscrivez-vous à la newsletter :</label>
+                    </div>
+                    <div>
+                        <input type="text" name="" id="" placeholder="Votre email">
+                        <button type="submit">OK</button>
+                    </div>
+                </form>
+                <div class="footer__address_grid">
+                    <i class="fas fa-map-marker-alt footer__icon footer_map_icon"></i>
+                    <div class="footer__address_text">
+                        <address>Hôtel Parimis</address>
+                        <address>1 rue du grand palais</address>
+                        <address>75001, Paris</address>
+                    </div>
+                    <i class="fas fa-phone footer__phone_icon"></i>
+                    <a href="tel:#" class="footer__phone">
+                        <p>+33 (0)1 02 03 04 05 </p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__copyright">&#169; copryright 2021-2022</div>
         </div>
-        <div>
-            <img src="" alt="" /><label for="">Inscrivez-vous à la newsletter :</label><input type="text" name=""
-                id=""><button type="submit">OK</button>
-        </div>
-        <div>
-            <img src="" alt="">
-            <address>Hôtel Parimis</address>
-            <address>1 rue du grand palais</address>
-            <address>75001, Paris</address>
-        </div>
-        <div>&#169; copryright 2021-2022</div>
     </footer>
 </body>
 

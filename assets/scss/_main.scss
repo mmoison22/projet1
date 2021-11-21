@@ -40,6 +40,9 @@ h1 {
 .bouton-reserver {
     position: fixed;
     right: 30px;
+    top: 25px;
+
+    z-index: 2;
 
     height: 30px;
     width: 150px;
@@ -59,4 +62,233 @@ h1 {
 
 figure {
     margin: 0;
+}
+
+h2 {
+    font-family: "Source Serif Pro";
+    font-size: 30px;
+    color: $secondary_color;
+}
+
+body {
+    font-family: "Source Serif Pro";
+    section {
+        margin: 40px 50px 10px 50px;
+
+        p {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+}
+
+h3 {
+    color: $primary_color;
+    font-family: "Source Serif Pro";
+    font-size: 25px;
+}
+
+.room_card {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 50px;
+    background-color: rgba($color: $background1, $alpha: 0.05);
+    img {
+        width: 500px;
+        object-fit: cover;
+    }
+
+    div {
+        margin-left: 50px;
+        position: relative;
+    }
+}
+
+.bouton-details {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    border: solid 2px $secondary_color;
+    color: $secondary_color;
+    font-family: "Raleway SemiBold";
+    font-size: 12px;
+    height: 40px;
+    width: 120px;
+
+    &:hover {
+        background-color: $secondary_color;
+        color: $white;
+    }
+}
+
+.contact {
+    background-color: rgba($color: $background1, $alpha: 0.05);
+    // margin: 0;
+    form {
+        margin: 0px 100px 0px 100px;
+        // div {
+        //     input {
+        //         width: 10%;
+        //     }
+        // }
+    }
+}
+
+.contact__grid {
+    // width: 500px;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "c d"
+    "e e";
+    grid-template-columns: 110px auto;
+    justify-content: center;
+}
+
+.contact__message {
+    grid-area: e;
+}
+
+footer {
+    font-family: $footer_font;
+    font-size: 12px;
+}
+
+.footer-bigcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background2;
+    color: $white;
+}
+
+.footer-smallcontainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+
+    // all children
+    > * {
+        height: 60px;
+        flex: 1;
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+.media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > * {
+        // background-color: red;
+        width: 130px;
+        margin: 3px;
+    }
+}
+
+.footer__social-items {
+    display: flex;
+    gap: 5px;
+}
+
+.footer__social-item {
+    font-size: $footer_icon_size;
+    height: 25px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: $white;
+    }
+
+    // instagram
+    &:nth-child(1) {
+        @include socialColor($media_instagram_color);
+    }
+
+    // facebook
+    &:nth-child(2) {
+        @include socialColor($media_facebook_color);
+    }
+
+    // twitter
+    &:nth-child(3) {
+        @include socialColor($media_twitter_color);
+    }
+
+    // youtube
+    &:nth-child(4) {
+        @include socialColor($media_youtube_color);
+    }
+
+    // pinterest
+    &:nth-child(5) {
+        @include socialColor($media_pinterest_color);
+    }
+}
+
+.newsletter {
+    flex: 2;
+    flex-direction: column;
+    gap: 5px;
+
+    > * {
+        width: 255px;
+    }
+
+    input {
+        width: 200px;
+    }
+
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.footer__icon {
+    font-size: $footer_icon_size;
+}
+
+.newsletter__text {
+    margin-left: 7px;
+}
+
+.footer__address_grid {
+    display: grid;
+    grid-template-areas:
+        "a b"
+        "c d";
+    align-items: center;
+    grid-template-columns: 25px auto;
+    justify-content: center;
+}
+
+.footer_map_icon {
+    grid-area: a;
+}
+
+.footer__address_text {
+    grid-area: b;
+    address {
+        font-style: normal;
+    }
+}
+
+.footer__phone_icon {
+    grid-area: c;
+}
+
+.footer__phone {
+    grid-area: d;
+    color: $white;
+}
+
+.footer__copyright {
+    margin: 10px;
 }
