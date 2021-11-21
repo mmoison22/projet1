@@ -6,7 +6,6 @@ header {
     height: 80px;
 }
 
-
 h1 {
     margin-left: 10px;
     color: $primary_color;
@@ -67,6 +66,10 @@ h1 {
     font-family: "Martel";
     font-size: 12px;
     color: $secondary_color;
+    a {
+        color: $secondary_color;
+    }
+
     ul {
         display: flex;
         align-items: center;
@@ -188,16 +191,20 @@ h3 {
     // width: 500px;
     padding: 20px;
     display: grid;
-    grid-template-areas: 
-    "a b"
-    "c d"
-    "e e";
+    grid-template-areas:
+        "a b"
+        "c d"
+        "e e";
     grid-template-columns: 110px auto;
     justify-content: center;
 }
 
 .contact__message {
     grid-area: e;
+}
+
+.contact_buttons {
+    margin-bottom: 10px;
 }
 
 footer {
@@ -221,10 +228,40 @@ footer {
 
     // all children
     > * {
+        border: none;
         height: 60px;
         flex: 1;
         margin: 10px;
         padding: 10px;
+    }
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    font-size: 13px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: black;
+    font-family: "Open Sans";
+
+    &:hover{
+        background-color: $background2;
+        color: $white;
+    }
+}
+
+.button2 {
+    font-size: 11px;
+    padding: 4px 10px;
+
+    &:hover{
+        background-color: black;
     }
 }
 
@@ -243,6 +280,42 @@ footer {
 .footer__social-items {
     display: flex;
     gap: 5px;
+    a {
+        color: $white;
+        &:visited {
+            color: none;
+        }
+        // &:hover{
+        //     color: red;
+        // }
+    }
+}
+
+.footer__social-link {
+    // instagram
+    &:nth-child(1) {
+        @include socialLinkColor($media_pinterest_color);
+    }
+
+    // facebook
+    &:nth-child(2) {
+        @include socialLinkColor($media_facebook_color);
+    }
+
+    // twitter
+    &:nth-child(3) {
+        @include socialLinkColor($media_twitter_color);
+    }
+
+    // youtube
+    &:nth-child(4) {
+        @include socialLinkColor($media_youtube_color);
+    }
+
+    // pinterest
+    &:nth-child(5) {
+        @include socialLinkColor($media_pinterest_color);
+    }
 }
 
 .footer__social-item {
@@ -252,35 +325,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    a {
-        color: $white;
-    }
-
-    // instagram
-    &:nth-child(1) {
-        @include socialColor($media_instagram_color);
-    }
-
-    // facebook
-    &:nth-child(2) {
-        @include socialColor($media_facebook_color);
-    }
-
-    // twitter
-    &:nth-child(3) {
-        @include socialColor($media_twitter_color);
-    }
-
-    // youtube
-    &:nth-child(4) {
-        @include socialColor($media_youtube_color);
-    }
-
-    // pinterest
-    &:nth-child(5) {
-        @include socialColor($media_pinterest_color);
-    }
 }
 
 .newsletter {

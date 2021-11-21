@@ -5,12 +5,10 @@
     color: $icon_color;
 }
 
-@mixin socialColor($mycolor) {
-    transition-duration: 200ms;
+@mixin socialLinkColor($mycolor) {
+    transition-duration: 0.2s;
     &:hover {
-        a {
-            color: rgba($color: $mycolor,$alpha : 1);
-        }
+        color: $mycolor;
         background-color: $white;
     }
 }

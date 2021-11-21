@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>Hôtel Parimis</title>
 </head>
@@ -24,9 +23,9 @@
         </div>
         <div class="breadcrumb">
             <ul>
-                <li><i class="fas fa-home"></i></li>
-                <li>></li>
-                <li>réservation</li>
+                <li><a href="./index.html"><i class="fas fa-home"></i></a></li>
+                <!-- <li>></li>
+                <li>réservation</li> -->
             </ul>
         </div>
         <a href="./index.html" class="title center-box">
@@ -128,9 +127,9 @@
                         <textarea name="" id="" cols="50" rows="5" placeholder="Tapez votre message ici"
                             class="contact__message"></textarea>
                     </div>
-                    <div>
-                        <button type="submit">Envoyer</button>
-                        <button type="reset">Annuler</button>
+                    <div class="contact_buttons">
+                        <button type="submit" class="button">Envoyer</button>
+                        <button type="reset" class="button">Annuler</button>
                     </div>
                 </div>
 
@@ -143,21 +142,21 @@
                 <div class="center-box media">
                     <p>Rejoignez-nous sur :</p>
                     <div class="footer__social-items">
-                        <div class="footer__social-item footer__icon"><a href="#" title="Instagram"><i
-                                    class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="footer__social-item footer__icon"><a href="#" title="Facebook"><i
-                                    class="fab fa-facebook"></i></a>
-                        </div>
-                        <div class="footer__social-item footer__icon"><a href="#" title="Twitter"><i
-                                    class="fab fa-twitter"></i></a>
-                        </div>
-                        <div class="footer__social-item footer__icon"><a href="#" title="Youtube"><i
-                                    class="fab fa-youtube"></i></a>
-                        </div>
-                        <div class="footer__social-item footer__icon"><a href="#" title="Pinterest"><i
-                                    class="fab fa-pinterest-p"></i></a>
-                        </div>
+                        <a href="#" title="Instagram" class="footer__social-link">
+                            <div class="footer__social-item footer__icon"><i class="fab fa-instagram"></i></div>
+                        </a>
+                        <a href="#" title="Facebook" class="footer__social-link">
+                            <div class="footer__social-item footer__icon"><i class="fab fa-facebook"></i></div>
+                        </a>
+                        <a href="#" title="Twitter" class="footer__social-link">
+                            <div class="footer__social-item footer__icon"><i class="fab fa-twitter"></i></div>
+                        </a>
+                        <a href="#" title="Youtube" class="footer__social-link">
+                            <div class="footer__social-item footer__icon"><i class="fab fa-youtube"></i></div>
+                        </a>
+                        <a href="#" title="Pinterest" class="footer__social-link">
+                            <div class="footer__social-item footer__icon"><i class="fab fa-pinterest-p"></i></div>
+                        </a>
                     </div>
                 </div>
                 <form action="" method="get" class="center-box newsletter">
@@ -167,7 +166,7 @@
                     </div>
                     <div>
                         <input type="text" name="" id="" placeholder="Votre email">
-                        <button type="submit">OK</button>
+                        <button type="submit" class="button button2">OK</button>
                     </div>
                 </form>
                 <div class="footer__address_grid">

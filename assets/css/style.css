@@ -149,6 +149,10 @@ h1 {
   color: #00258C;
 }
 
+.breadcrumb a {
+  color: #00258C;
+}
+
 .breadcrumb ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -284,6 +288,10 @@ h3 {
   grid-area: e;
 }
 
+.contact_buttons {
+  margin-bottom: 10px;
+}
+
 footer {
   font-family: "Open Sans";
   font-size: 12px;
@@ -316,12 +324,43 @@ footer {
 }
 
 .footer-smallcontainer > * {
+  border: none;
   height: 60px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin: 10px;
   padding: 10px;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  font-size: 13px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  cursor: pointer;
+  color: black;
+  font-family: "Open Sans";
+}
+
+.button:hover {
+  background-color: #4D4123;
+  color: white;
+}
+
+.button2 {
+  font-size: 11px;
+  padding: 4px 10px;
+}
+
+.button2:hover {
+  background-color: black;
 }
 
 .media {
@@ -349,6 +388,64 @@ footer {
   gap: 5px;
 }
 
+.footer__social-items a {
+  color: white;
+}
+
+.footer__social-items a:visited {
+  color: none;
+}
+
+.footer__social-link:nth-child(1) {
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.footer__social-link:nth-child(1):hover {
+  color: #E60023;
+  background-color: white;
+}
+
+.footer__social-link:nth-child(2) {
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.footer__social-link:nth-child(2):hover {
+  color: #3b5998;
+  background-color: white;
+}
+
+.footer__social-link:nth-child(3) {
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.footer__social-link:nth-child(3):hover {
+  color: #00acee;
+  background-color: white;
+}
+
+.footer__social-link:nth-child(4) {
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.footer__social-link:nth-child(4):hover {
+  color: red;
+  background-color: white;
+}
+
+.footer__social-link:nth-child(5) {
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.footer__social-link:nth-child(5):hover {
+  color: #E60023;
+  background-color: white;
+}
+
 .footer__social-item {
   font-size: 1.4em;
   height: 25px;
@@ -362,75 +459,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.footer__social-item a {
-  color: white;
-}
-
-.footer__social-item:nth-child(1) {
-  -webkit-transition-duration: 200ms;
-          transition-duration: 200ms;
-}
-
-.footer__social-item:nth-child(1):hover {
-  background-color: white;
-}
-
-.footer__social-item:nth-child(1):hover a {
-  color: #8a3ab9;
-}
-
-.footer__social-item:nth-child(2) {
-  -webkit-transition-duration: 200ms;
-          transition-duration: 200ms;
-}
-
-.footer__social-item:nth-child(2):hover {
-  background-color: white;
-}
-
-.footer__social-item:nth-child(2):hover a {
-  color: #3b5998;
-}
-
-.footer__social-item:nth-child(3) {
-  -webkit-transition-duration: 200ms;
-          transition-duration: 200ms;
-}
-
-.footer__social-item:nth-child(3):hover {
-  background-color: white;
-}
-
-.footer__social-item:nth-child(3):hover a {
-  color: #00acee;
-}
-
-.footer__social-item:nth-child(4) {
-  -webkit-transition-duration: 200ms;
-          transition-duration: 200ms;
-}
-
-.footer__social-item:nth-child(4):hover {
-  background-color: white;
-}
-
-.footer__social-item:nth-child(4):hover a {
-  color: red;
-}
-
-.footer__social-item:nth-child(5) {
-  -webkit-transition-duration: 200ms;
-          transition-duration: 200ms;
-}
-
-.footer__social-item:nth-child(5):hover {
-  background-color: white;
-}
-
-.footer__social-item:nth-child(5):hover a {
-  color: #e60023;
 }
 
 .newsletter {
@@ -538,11 +566,24 @@ footer {
 }
 
 @media screen and (max-width: 501px) {
-  body section {
+  main section {
     margin: 0;
+  }
+  main section h2, main section h3 {
+    margin-left: 10px;
+  }
+  main section p {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .bouton-details {
+    height: 30px;
+    margin-left: 30px;
   }
   .room_card {
     margin: 0;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.7);
+    margin-bottom: 20px;
   }
   .room_card div {
     margin: 0;
@@ -575,6 +616,9 @@ footer {
   }
   .newsletter {
     border: 0;
+  }
+  .contact__grid {
+    width: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */
