@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+	<title>Hôtel Parimis - Accueil</title>
+</head>
+
+<body>
+	<header>
+		<div class="nav-bigcontenair">
+			<div class="nav-contenair">
+				<div class="nav-icons" onclick="toggleSideNav()">
+					<p class="nav-menu-icon" id="nav-menu-icon" style="display: block;"></p>
+					<p class="nav-close-icon" id="nav-close-icon" style="display: none;"></p>
+				</div>
+				<h1>Hôtel Parimis</h1>
+			</div>
+			<div class="nav-menu">
+				<nav class="nav-side" id="nav-side" style="display: none">
+					<ul>
+						<a href="index.html">
+							<li>Accueil</li>
+						</a>
+						<a href="chambres.html">
+							<li>Chambres</li>
+						</a>
+						<a href="reservation.html">
+							<li>Réservation</li>
+						</a>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main>
+		<figure>
+			<!--
+				<img src="assets/img/dev-worker_x2100.jpg" alt="Photo deco"
+					srcset="assets/img/dev-worker_x2100.jpg 2100w, assets/img/dev-worker_x1550.jpg 1550w, assets/img/dev-worker_x775.jpg 775w, assets/img/dev-worker_x390.jpg 390w"
+					sizes="(min-width:400) 775px, (min-width:960) 1550px, (min-width:1600) 2100px, 100vw">
+					-->
+			<!-- <img src="assets/img/hotel-600.jpg" srcset="assets/img/hotel-2880.jpg 2880w, assets/img/hotel-600.jpg 600w" sizes="(min-width:1) 600px, (min-width:601) 2880px, 100vw" alt="Hôtel Parimis"> -->
+			<img src="assets/img/hotel-500.jpg" alt="Hôtel Parimis">
+		</figure>
+		<section>
+			<h2>Présentation</h2>
+			<div>
+				<p><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam illo architecto voluptas fugit
+						harum obcaecati nisi iure consectetur, dolor dolore consequuntur. Blanditiis, tempore labore!
+						Harum recusandae molestiae fugiat incidunt aspernatur.</span><span>Rem eius libero ipsum nobis
+						quia quisquam autem. At nulla dicta voluptatum in! Mollitia perspiciatis esse pariatur sed,
+						repellat nemo dignissimos cum, ea cumque voluptates molestias sequi quisquam quo
+						minus!</span><span>Nemo asperiores voluptate ea iusto ipsa deleniti, veniam error voluptatibus
+						ut mollitia magni ullam repudiandae fugit facere totam corporis odio provident deserunt soluta
+						optio eligendi praesentium consectetur eveniet. Reiciendis, excepturi.</span><span>Laudantium
+						reiciendis, doloremque temporibus at nisi incidunt quibusdam distinctio culpa quos placeat
+						quisquam voluptatem illo eveniet? Dolorum, velit reprehenderit dicta minus recusandae aperiam
+						iste architecto id fugit. Esse, vel inventore?</span></p>
+			</div>
+		</section>
+		<section class="chambres">
+			<h2>Des chambres uniques</h2>
+			<div>
+				<p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad debitis harum voluptatem omnis,
+						corporis illo ducimus sint repellat architecto ut obcaecati sunt, at eum cumque rem rerum, neque
+						ab ex.</span><span>Quia perspiciatis vero voluptatibus maiores? Reprehenderit, nisi minima
+						inventore adipisci unde distinctio. Facere tenetur impedit quibusdam excepturi nemo omnis, modi
+						nihil temporibus, possimus eaque deleniti amet recusandae laudantium, fugiat
+						repellat.</span>
+					</p>
+					<img src="./assets/img/chambres/1.jpg"></img>
+					<a href="./chambres.html">Voir toutes les chambres</a>
+			</div>
+		</section>
+		<section>
+			<h2>Expérience</h2>
+			<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum inventore illo voluptatibus earum
+					dolore aperiam, sunt magni error debitis nesciunt? Cupiditate itaque nam excepturi aperiam earum.
+					Laudantium quia ipsum reprehenderit!</span><span>Perspiciatis itaque a doloremque ducimus dolore
+					obcaecati, minus suscipit reiciendis vitae distinctio, velit deleniti debitis, minima amet porro
+					totam voluptates impedit cum ratione architecto. Voluptates aspernatur nemo facilis architecto
+					esse.</span></p>
+					<img src="./assets/img/LeMeurice1_0.jpg"></img>
+		</section>
+	</main>
+
+	<footer>
+		<div class="footer__social">
+			<div class="footer__social-text">
+				<p>Rejoignez-nous sur : </p>
+			</div>
+			<div class="footer__social-item"><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></div>
+			<div class="footer__social-item"><a href="#" title="Facebook"><i class="fab fa-facebook"></i></a></div>
+			<div class="footer__social-item"><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></div>
+			<div class="footer__social-item"><a href="#" title="Youtube"><i class="fab fa-youtube"></i></a></div>
+			<div class="footer__social-item"><a href="#" title="Pinterest"><i class="fab fa-pinterest-p"></i></a></div>
+			<div class="footer__social-item"><a href="#" title="Youtube"><img
+						src="./assets/img/brands/youtube.svg"></i></a></div>
+			<div class="footer__social-item"><a href="#" title="Facebook"><img
+						src="./assets/img/brands/facebook.svg"></i></a></div>
+			<div class="footer__social-item"><a href="#" title="Twitter"><img
+						src="./assets/img/brands/twitter.svg"></i></a></div>
+			<div class="footer__social-item"><a href="#" title="Pinterest"><img
+						src="./assets/img/brands/pinterest.svg"></i></a></div>
+		</div>
+		<address class="adress">
+			Hôtel Parimis,
+			12 rue Victor Hugo,
+			75005 Paris
+		</address>
+		<div class="copy">Hôtel Parimis &#169; Copyright 2022</div>
+	</footer>
+	</div>
+
+	</footer>
+	<script src="./assets/js/scripts.js"></script>
+</body>
+
+</html>

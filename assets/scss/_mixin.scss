@@ -1,6 +1,16 @@
 @mixin my-icon($fontcode) {
     font-family: $iconfontfamily;
     content: $fontcode;
-	font-size: $iconsize;
+    font-size: $iconsize;
     color: $icon_color;
+}
+
+@mixin socialColor($mycolor) {
+    transition-duration: 200ms;
+    &:hover {
+        a {
+            color: rgba($color: $mycolor,$alpha : 1);
+        }
+        background-color: $white;
+    }
 }

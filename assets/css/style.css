@@ -1,135 +1,282 @@
-@charset "UTF-8";
 @font-face {
-  font-family: "Parisienne";
-  src: url("../fonts/Parisienne-Regular.ttf") format("truetype"); }
+  font-family: "Ovo";
+  src: url("../fonts/Ovo-Regular.ttf") format("truetype"); }
 @font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.ttf") format("truetype"); }
+  font-family: "Martel";
+  src: url("../fonts/Martel-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Raleway Bold";
+  src: url("../fonts/Raleway-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "Raleway SemiBold";
+  src: url("../fonts/Raleway-SemiBold.ttf") format("truetype"); }
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("../fonts/SourceSerifPro-Regular.ttf") format("truetype"); }
 @font-face {
   font-family: "EB Garamond";
   src: url("../fonts/EBGaramond-Regular.ttf") format("truetype"); }
 @font-face {
-  font-family: "EB Garamond Bold";
-  src: url("../fonts/EBGaramond-Bold.ttf") format("truetype"); }
-@font-face {
-  font-family: "Cormorant Garamond";
-  src: url("../fonts/CormorantGaramond-Regular.ttf") format("truetype"); }
-.form__contact-group {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Regular.ttf); }
+.center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.center-vertical {
+  display: flex;
+  align-items: center; }
+
+.center-box2 {
   display: flex;
   flex-direction: column;
-  margin: 1em; }
-
-header {
-  position: fixed;
-  height: "55px";
-  width: 100%;
-  background-color: white; }
-
-main {
-  margin-top: "55px"; }
-
-.chambres {
-  background-color: rgba(218, 165, 32, 0.1);
-  padding: 1px; }
-
-figure {
-  margin: 0; }
+  justify-content: center;
+  align-items: center; }
 
 a {
   text-decoration: none; }
 
-h2 {
-  font-family: "Parisienne";
-  margin-left: 20px;
-  color: #00258C; }
-
-section p {
-  font-family: "Open Sans";
-  font-size: 11px;
-  margin: 20px; }
-section img {
-  width: 90%;
-  margin-left: 5%; }
-
-.nav-contenair {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  margin-left: 8px;
-  height: 60px; }
-
-.nav-menu-icon::before {
-  font-family: "Material Icons";
-  content: "";
-  font-size: 1.7em;
-  color: #757575; }
-
-.nav-close-icon::before {
-  font-family: "Material Icons";
-  content: "";
-  font-size: 1.7em;
-  color: #757575; }
-
-.nav-side ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 0;
-  margin: 0;
-  gap: 1px;
-  line-height: 1.5;
-  font-size: 13px;
-  font-family: "Open Sans";
-  border-bottom: 1px #757575 solid; }
-.nav-side li {
-  text-align: center;
-  list-style: none;
-  background-color: #8C670B; }
-  .nav-side li:hover {
-    background-color: white; }
-.nav-side a {
-  color: white;
-  text-transform: capitalize; }
-  .nav-side a:hover {
-    color: #daa520; }
-
 header {
-  display: flex;
-  flex-direction: column; }
-
-.header-container img {
-  width: 100%; }
+  height: 80px; }
 
 h1 {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: "Parisienne", serif;
-  font-size: 1.8em;
-  color: goldenrod;
+  margin-left: 10px;
+  color: #daa520;
+  font-family: "Ovo";
+  font-size: 40px;
+  font-weight: 100; }
+
+.breadcrumb {
+  flex: 5%;
+  font-family: "Martel";
+  font-size: 12px;
+  color: #00258C; }
+  .breadcrumb ul {
+    display: flex;
+    gap: 2px; }
+    .breadcrumb ul li {
+      list-style: none; }
+
+.title {
+  position: absolute; }
+  .title img {
+    width: 50px;
+    height: 50px; }
+
+.bouton-reserver {
+  position: fixed;
+  right: 30px;
+  top: 25px;
+  z-index: 2;
+  height: 30px;
+  width: 150px;
+  background-color: #00258C;
+  color: white;
+  font-family: "Raleway Bold";
+  font-size: 14px; }
+  .bouton-reserver:hover {
+    background-color: white;
+    color: #00258C;
+    border: 2px solid #00258C; }
+
+figure {
   margin: 0; }
 
+h2 {
+  font-family: "Source Serif Pro";
+  font-size: 30px;
+  color: #00258C; }
+
+body {
+  font-family: "Source Serif Pro"; }
+  body section {
+    margin: 40px 50px 10px 50px; }
+    body section p {
+      margin-left: 10px;
+      margin-right: 10px; }
+
+h3 {
+  color: #daa520;
+  font-family: "Source Serif Pro";
+  font-size: 25px; }
+
+.room_card {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 50px;
+  background-color: rgba(218, 165, 32, 0.05); }
+  .room_card img {
+    width: 500px;
+    object-fit: cover; }
+  .room_card div {
+    margin-left: 50px;
+    position: relative; }
+
+.bouton-details {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border: solid 2px #00258C;
+  color: #00258C;
+  font-family: "Raleway SemiBold";
+  font-size: 12px;
+  height: 40px;
+  width: 120px; }
+  .bouton-details:hover {
+    background-color: #00258C;
+    color: white; }
+
+.contact {
+  background-color: rgba(218, 165, 32, 0.05); }
+  .contact form {
+    margin: 0px 100px 0px 100px; }
+
+.contact__grid {
+  padding: 20px;
+  display: grid;
+  grid-template-areas: "a b" "c d" "e e";
+  grid-template-columns: 110px auto;
+  justify-content: center; }
+
+.contact__message {
+  grid-area: e; }
+
 footer {
+  font-family: "Open Sans";
+  font-size: 12px; }
+
+.footer-bigcontainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #8C670B;
-  color: white;
-  font-family: "Open Sans";
-  font-size: 12px; }
-  footer address {
-    margin: 5px; }
+  background-color: #4D4123;
+  color: white; }
 
-.copy {
-  font-size: xx-small;
-  margin: 5px; }
-
-.footer__social {
+.footer-smallcontainer {
   display: flex;
   justify-content: center;
-  align-items: center;
+  gap: 10px;
+  width: 100%; }
+  .footer-smallcontainer > * {
+    height: 60px;
+    flex: 1;
+    margin: 10px;
+    padding: 10px; }
+
+.media {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .media > * {
+    width: 130px;
+    margin: 3px; }
+
+.footer__social-items {
+  display: flex;
   gap: 5px; }
+
+.footer__social-item {
+  font-size: 1.4em;
+  height: 25px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .footer__social-item a {
     color: white; }
+  .footer__social-item:nth-child(1) {
+    transition-duration: 200ms; }
+    .footer__social-item:nth-child(1):hover {
+      background-color: white; }
+      .footer__social-item:nth-child(1):hover a {
+        color: #8a3ab9; }
+  .footer__social-item:nth-child(2) {
+    transition-duration: 200ms; }
+    .footer__social-item:nth-child(2):hover {
+      background-color: white; }
+      .footer__social-item:nth-child(2):hover a {
+        color: #3b5998; }
+  .footer__social-item:nth-child(3) {
+    transition-duration: 200ms; }
+    .footer__social-item:nth-child(3):hover {
+      background-color: white; }
+      .footer__social-item:nth-child(3):hover a {
+        color: #00acee; }
+  .footer__social-item:nth-child(4) {
+    transition-duration: 200ms; }
+    .footer__social-item:nth-child(4):hover {
+      background-color: white; }
+      .footer__social-item:nth-child(4):hover a {
+        color: red; }
+  .footer__social-item:nth-child(5) {
+    transition-duration: 200ms; }
+    .footer__social-item:nth-child(5):hover {
+      background-color: white; }
+      .footer__social-item:nth-child(5):hover a {
+        color: #e60023; }
+
+.newsletter {
+  flex: 2;
+  flex-direction: column;
+  gap: 5px;
+  border-left: 1px solid;
+  border-right: 1px solid; }
+  .newsletter > * {
+    width: 255px; }
+  .newsletter input {
+    width: 200px; }
+
+.footer__icon {
+  font-size: 1.4em; }
+
+.newsletter__text {
+  margin-left: 7px; }
+
+.footer__address_grid {
+  display: grid;
+  grid-template-areas: "a b" "c d";
+  align-items: center;
+  grid-template-columns: 25px auto;
+  justify-content: center; }
+
+.footer_map_icon {
+  grid-area: a; }
+
+.footer__address_text {
+  grid-area: b; }
+  .footer__address_text address {
+    font-style: normal; }
+
+.footer__phone_icon {
+  grid-area: c; }
+
+.footer__phone {
+  grid-area: d;
+  color: white; }
+
+.footer__copyright {
+  margin: 10px; }
+
+@media screen and (max-width: 900px) {
+  .room_card {
+    flex-direction: column; }
+    .room_card img, .room_card div {
+      min-width: 400px;
+      width: auto; }
+
+  .bouton-details {
+    position: relative; } }
+@media screen and (max-width: 700px) {
+  .title__text {
+    display: none; } }
+@media screen and (max-width: 501px) {
+  body section {
+    margin: 0; }
+
+  .room_card {
+    margin: 0; }
+    .room_card div {
+      margin: 0; } }
 
 /*# sourceMappingURL=style.css.map */
