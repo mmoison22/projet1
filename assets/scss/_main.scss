@@ -27,6 +27,9 @@ h1 {
 }
 
 .nav-side {
+    transition-duration: 0.5s;
+    height: 0px;
+
     ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

@@ -101,6 +101,12 @@ h1 {
   color: #757575;
 }
 
+.nav-side {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  height: 0px;
+}
+
 .nav-side ul {
   display: -ms-grid;
   display: grid;

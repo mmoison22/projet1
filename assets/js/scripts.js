@@ -6,6 +6,15 @@ function reverseDisplay (x) {
     }
 }
 
+function toggleDiv (element) {
+    let _element_css = window.getComputedStyle(element);
+    if (_element_css.height == "0px") {
+        element.style.height = "20px";
+    } else {
+        element.style.height = "0px";
+    }
+}
+
 function switchIcons() {
     let menu = document.getElementById("nav-menu-icon");
     let close = document.getElementById("nav-close-icon");
@@ -15,11 +24,8 @@ function switchIcons() {
 
 function toggleSideNav() {
     let x = document.getElementById("nav-side");
-    reverseDisplay(x);
+    toggleDiv(x);
     switchIcons();
-    // document.body.style.backgroundColor = "red";
 }
 
-// document.onclick = toggleSideNav;
-// document.getElementById("nav-container").onclick = toggleSideNav;
 document.getElementById("burgermenu").addEventListener("click", toggleSideNav);
