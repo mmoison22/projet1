@@ -151,8 +151,12 @@ h3 {
     }
 
     div {
-        margin-left: 50px;
+        margin-left: 40px;
         position: relative;
+    }
+
+    p {
+        margin-right: 40px;
     }
 }
 
@@ -197,10 +201,15 @@ h3 {
         "e e";
     grid-template-columns: 110px auto;
     justify-content: center;
+    align-items: center;
+    font-family: $contact_font;
+    font-size: $contact_fontsize;
 }
 
 .contact__message {
     grid-area: e;
+    min-width: 350px;
+    min-height: 100px;
 }
 
 .contact_buttons {

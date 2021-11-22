@@ -118,15 +118,15 @@
         </section>
         <section>
             <h2>Nous contacter</h2>
-            <form action="">
+            <form action="#" method="post">
                 <div class="center-box2 contact">
                     <div class="contact__grid">
-                        <label for="" class="contact__label_name">Nom Prénom</label>
-                        <input type="text" class="contact__input_name">
-                        <label for="" class="contact__label_email">Email</label>
-                        <input type="text" class="contact__input_email">
+                        <label for="contact_name" class="contact__label_name">Nom Prénom</label>
+                        <input type="text" class="contact__input_name" minlength="3" pattern="[ \u00BF-\u1FFF\u2C00-\uD7FF\w]+" required>
+                        <label for="contact_email" class="contact__label_email">Email</label>
+                        <input type="email" class="contact__input_email" pattern="[a-zA-Z0-9/\-//\./]+@[a-zA-Z0-9/\-/]+.[a-zA-Z]{2,3}" required>
                         <textarea name="" id="" cols="50" rows="5" placeholder="Tapez votre message ici"
-                            class="contact__message"></textarea>
+                            class="contact__message" required></textarea>
                     </div>
                     <div class="contact_buttons">
                         <button type="submit" class="button">Envoyer</button>
@@ -166,7 +166,7 @@
                         <label for="" class="newsletter__text">Inscrivez-vous à la newsletter :</label>
                     </div>
                     <div>
-                        <input type="text" name="" id="" placeholder="Votre email">
+                        <input type="text" name="" id="" placeholder="Votre email" pattern="[a-zA-Z0-9/\-//\./]+@[a-zA-Z0-9/\-/]+.[a-zA-Z]{2,3}" required>
                         <button type="submit" class="button button2">OK</button>
                     </div>
                 </form>

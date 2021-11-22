@@ -240,8 +240,12 @@ h3 {
 }
 
 .room_card div {
-  margin-left: 50px;
+  margin-left: 40px;
   position: relative;
+}
+
+.room_card p {
+  margin-right: 40px;
 }
 
 .bouton-details {
@@ -279,6 +283,11 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Open Sans";
+  font-size: 0.8em;
 }
 
 .contact__message {
@@ -286,6 +295,8 @@ h3 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: e;
+  min-width: 350px;
+  min-height: 100px;
 }
 
 .contact_buttons {
@@ -552,6 +563,8 @@ footer {
   }
   .bouton-details {
     position: relative;
+    margin-top: 30px;
+    margin-left: 20px;
   }
 }
 
