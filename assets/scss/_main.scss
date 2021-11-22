@@ -4,6 +4,11 @@
         flex-direction: column;
         margin: 1em;
     }
+    &-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 } 
 #resa {
     //background-color: aqua;
