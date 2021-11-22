@@ -22,4 +22,4 @@ function toggleSideNav() {
 
 // document.onclick = toggleSideNav;
 // document.getElementById("nav-container").onclick = toggleSideNav;
-// document.getElementById("nav-container").addEventListener("click", toggleSideNav);
+document.getElementById("burgermenu").addEventListener("click", toggleSideNav);
