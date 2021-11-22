@@ -10,11 +10,19 @@
     padding: 0.5em;
     border-top: 0.2em solid $primary_color;
     border-bottom: 0.2em solid $primary_color;
+    p {
+        color: $primary_color;
+        font-weight: bold;
+        padding-left: 0.5em;
+    }
 
 }
-#room_selection {
+.room_selection {
     //display: flex;
+    //justify-content: space-between;
+    //margin: auto 1em;
     //flex-direction: column;
+    margin: 0.5em 0;
     &-label {
         flex-direction: row;
     }

@@ -43,9 +43,15 @@
   padding: 0.5em;
   border-top: 0.2em solid #daa520;
   border-bottom: 0.2em solid #daa520; }
+  #resa p {
+    color: #daa520;
+    font-weight: bold;
+    padding-left: 0.5em; }
 
-#room_selection-label {
-  flex-direction: row; }
+.room_selection {
+  margin: 0.5em 0; }
+  .room_selection-label {
+    flex-direction: row; }
 
 @media screen and (min-width: 480px) and (max-width: 779px) {
   #resa {
@@ -58,10 +64,10 @@
     flex-direction: column;
     margin: 1em; }
 
-  #room_selection {
+  .room_selection {
     display: flex;
     flex-direction: column; }
-    #room_selection-label {
+    .room_selection-label {
       flex-direction: row; } }
 @media screen and (min-width: 780px) {
   #resa {
@@ -74,10 +80,12 @@
     flex-direction: row;
     margin: 1em; }
 
-  #room_selection {
+  .room_selection {
     display: flex;
-    flex-direction: column; }
-    #room_selection-label {
+    flex-direction: column;
+    margin: auto 1em;
+    justify-content: space-between; }
+    .room_selection-label {
       flex-direction: row; } }
 @media screen and (max-width: 501px) {
   body section {
