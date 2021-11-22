@@ -38,6 +38,10 @@
   display: flex;
   flex-direction: column;
   margin: 1em; }
+.form__contact-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 #resa {
   padding: 0.5em;
@@ -52,6 +56,22 @@
   margin: 0.5em 0; }
   .room_selection-label {
     flex-direction: row; }
+
+#confirmation {
+  background-color: #DDAE36;
+  color: white;
+  margin: 5rem 20rem;
+  padding: 1rem;
+  display: block;
+  text-align: center; }
+  #confirmation h2 {
+    margin: 2rem auto;
+    font-size: 2rem;
+    font-family: "EB Garamond"; }
+  #confirmation p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Cormorant Garamond"; }
 
 @media screen and (min-width: 480px) and (max-width: 779px) {
   #resa {
