@@ -34,6 +34,11 @@ document.getElementById("burgermenu").addEventListener("click", toggleSideNav);
  * Go Top icon
  */
 window.addEventListener("scroll",showGoToTopIcon);
+document.getElementById("go_to_top").addEventListener("click",scrollToTop);
+
+function scrollToTop() {
+    document.documentElement.scrollTo(0,0);
+}
 
 function showGoToTopIcon() {
     let _currentScroll = document.documentElement.scrollTop;
