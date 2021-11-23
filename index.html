@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="fa<vicon-32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <title>Hôtel Parimis</title>
 </head>
 
@@ -30,7 +29,7 @@
         </div>
         <a href="./index.html" class="title center-box">
             <img src="./assets/img/logo/logo2.webp" height="50" width="50" alt="Hôtel Parimis" />
-            <h1 class="title__text">Hôtel Parimis</h1>
+            <h1 class="title__text" id="titre">Hôtel Parimis</h1>
         </a>
         <a href="./reservation.html">
             <div class="bouton-reserver center-box">R&#201;SERVER</div>
@@ -135,6 +134,8 @@
 
             </form>
         </section>
+        <!-- INLINE display: to override the css of font awesome forcing inline-block; -->
+        <i class="fas fa-arrow-up go_to_top" id="go_to_top" style="display: none;"><a href="#titre">  go top</a></i>
     </main>
     <footer>
         <div class="footer-bigcontainer">

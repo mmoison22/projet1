@@ -87,6 +87,20 @@ h1 {
   font-weight: 100;
 }
 
+.go_to_top {
+  position: fixed;
+  right: 0.5em;
+  bottom: 0.5em;
+  font-size: 0.5em;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+
+.go_to_top a {
+  color: white;
+}
+
 .nav-menu-icon::before {
   font-family: "Material Icons";
   content: "";

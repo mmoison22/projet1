@@ -29,3 +29,18 @@ function toggleSideNav() {
 }
 
 document.getElementById("burgermenu").addEventListener("click", toggleSideNav);
+
+/**
+ * Go Top icon
+ */
+window.addEventListener("scroll",showGoToTopIcon);
+
+function showGoToTopIcon() {
+    let _currentScroll = document.documentElement.scrollTop;
+    if (_currentScroll > 600) {
+        document.getElementById("go_to_top").style.display = "block";
+    }
+    else {
+        document.getElementById("go_to_top").style.display = "none";
+    }
+}
