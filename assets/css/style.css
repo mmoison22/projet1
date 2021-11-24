@@ -88,6 +88,7 @@ h1 {
 }
 
 .go_to_top {
+  display: none;
   position: fixed;
   right: 0.5em;
   bottom: 0.5em;

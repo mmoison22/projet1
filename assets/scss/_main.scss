@@ -15,7 +15,7 @@ h1 {
 }
 
 .go_to_top {
-    //display: none; // ne marche pas avec le css de font awesome css => inline style dans le html
+    display: none;
     position: fixed;
     right: 0.5em;
     bottom: 0.5em;
