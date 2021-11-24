@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\cv2022"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Projet1",
+		"liveServer.settings.port": 5501
+	}
+}

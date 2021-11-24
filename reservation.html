@@ -365,24 +365,30 @@
                                                 max="30">
                                 </div>
                                 <div class="form__contact-group"><label for="message">Laissez-nous un
-                                                message &nbsp;</label><textarea name="message" id="message" cols="30" rows="10"
+                                                message &nbsp;</label><textarea name="message" id="message" cols="127" rows="5"
                                                 minlength="10" maxlength="240"
                                                 placeholder="Laissez-nous un message avec vos souhaits et nous mettrons tout en oeuvre pour les réaliser !"
                                                 required></textarea></div>
                                 <p>Paiement</p> 
-                                <select name="paiement">
-                                        <option value="">Choisissez votre moyen de paiement</option>
-                                        <option value="american_express" selected="selected">American Express</option>
-                                        <option value="mastercard">Mastercard</option>
-                                        <option value="diners_club">Diners Club</option>
-                                        <option value="visa">Visa</option>
-                                        <option value="jcb">JCB</option>
-                                </select>
-                                <i class="fab fa-cc-amex"></i>
-                                <i class="fab fa-cc-mastercard"></i>
-                                <i class="fab fa-cc-diners-club"></i>
-                                <i class="fab fa-cc-visa"></i>
-                                <i class="fab fa-cc-jcb"></i>
+                                <div class="form__contact-group">
+                                        <p>
+                                                <i class="fab fa-cc-amex"></i>
+                                                <i class="fab fa-cc-mastercard"></i>
+                                                <i class="fab fa-cc-diners-club"></i>
+                                                <i class="fab fa-cc-visa"></i>
+                                                <i class="fab fa-cc-jcb"></i>
+
+                                        </p>
+                                
+                                        <select name="paiement">
+                                                <option value="">Choisissez votre moyen de paiement</option>
+                                                <option value="american_express" selected="selected">American Express</option>
+                                                <option value="mastercard">Mastercard</option>
+                                                <option value="diners_club">Diners Club</option>
+                                                <option value="visa">Visa</option>
+                                                <option value="jcb">JCB</option>
+                                        </select>
+                                </div>
                                 <div class="form__contact-group"><label for="card_number">Numéro de la carte
                                                 &nbsp;</label>
                                         <input type="text" id="card_number" pattern="[0-9]+"
