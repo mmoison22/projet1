@@ -104,6 +104,7 @@ h1 {
   content: "";
   font-size: 1.7em;
   color: #757575;
+  cursor: pointer;
 }
 
 .nav-close-icon::before {
@@ -111,6 +112,7 @@ h1 {
   content: "";
   font-size: 1.7em;
   color: #757575;
+  cursor: pointer;
 }
 
 .nav-side {

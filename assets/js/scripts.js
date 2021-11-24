@@ -51,7 +51,7 @@ function showGoToTopIcon() {
 }
 
 /**
- * Form Contact
+ * Form Contact & Newsletter
  */
 document.getElementById("form_contact").addEventListener("submit", showConfirmation);
 document.getElementById("form_newsletter").addEventListener("submit", showConfirmation);
@@ -60,6 +60,13 @@ function showConfirmation(e) {
     e.preventDefault();
 
     let _idText = e.target.id == "form_contact" ? "confirmation_message_text" : "confirmation_newsletter_text";
+
+    // Calcul de la hauteur totale de notre popup
+    // hauteur totale = height + border-top + border-bottom
+    // let _height = 
+    // parseCssToInt(window.getComputedStyle(confirmation).getPropertyValue("height"))
+    // + parseCssToInt(window.getComputedStyle(confirmation).getPropertyValue("border-top-width")) 
+    // + parseCssToInt(window.getComputedStyle(confirmation).getPropertyValue("border-bottom-width"));
 
     // Pop Up
     document.getElementById("background_overlay").style.display = "block";
@@ -71,5 +78,11 @@ function showConfirmation(e) {
         document.getElementById("confirmation").style.bottom = "-210px";
         document.getElementById(_idText).style.display = "none";
         document.getElementById("background_overlay").style.display = "none";
-    }, 2000);
+    }, 3000);
+}
+
+
+// Cette fonction est nécessaire pour récupérer la valeur entière d'une propriété CSS de type taille d'unité px/em/rem
+function parseCssToInt() {
+    
 }

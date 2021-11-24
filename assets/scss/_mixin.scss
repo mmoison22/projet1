@@ -11,11 +11,13 @@
     align-items: center;
 }
 
-@mixin my-icon($fontcode) {
+// For Google Icons
+@mixin my-google-icon($fontcode) {
     font-family: $iconfontfamily;
     content: $fontcode;
     font-size: $iconsize;
     color: $icon_color;
+    cursor: pointer;
 }
 
 @mixin socialLinkColor($mycolor) {

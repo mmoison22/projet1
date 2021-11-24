@@ -28,13 +28,13 @@ h1 {
 
 .nav-menu-icon {
     &::before {
-        @include my-icon("\e5d2");
+        @include my-google-icon("\e5d2");
     }
 }
 
 .nav-close-icon {
     &::before {
-        @include my-icon("\e5cd");
+        @include my-google-icon("\e5cd");
     }
 }
 
