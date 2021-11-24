@@ -410,3 +410,42 @@ footer {
 .footer__copyright {
     margin: 10px;
 }
+
+.background_overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: black, $alpha: 0.6);
+}
+
+.confirmation {
+    @include myflex2;
+    background-color: $white;
+    margin: 0 auto;
+    border: 5px solid $primary_color;
+    width: 90%;
+    font-family: "Open Sans";
+    gap: 10px;
+
+    position: fixed;
+    z-index: 2;
+    height: 200px;
+    bottom: -210px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    transition-duration: 0.3s;
+
+    p {
+        display: none;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}

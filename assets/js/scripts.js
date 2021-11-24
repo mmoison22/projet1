@@ -1,4 +1,4 @@
-function reverseDisplay (x) {
+function reverseDisplay(x) {
     if (x.style.display == "none") {
         x.style.display = "block";
     } else {
@@ -6,7 +6,7 @@ function reverseDisplay (x) {
     }
 }
 
-function toggleDiv (element) {
+function toggleDiv(element) {
     let _element_css = window.getComputedStyle(element);
     if (_element_css.height == "0px") {
         element.style.height = "20px";
@@ -33,11 +33,11 @@ document.getElementById("burgermenu").addEventListener("click", toggleSideNav);
 /**
  * Go Top icon
  */
-window.addEventListener("scroll",showGoToTopIcon);
-document.getElementById("go_to_top").addEventListener("click",scrollToTop);
+window.addEventListener("scroll", showGoToTopIcon);
+document.getElementById("go_to_top").addEventListener("click", scrollToTop);
 
 function scrollToTop() {
-    document.documentElement.scrollTo(0,0);
+    document.documentElement.scrollTo(0, 0);
 }
 
 function showGoToTopIcon() {
@@ -47,5 +47,38 @@ function showGoToTopIcon() {
     }
     else {
         document.getElementById("go_to_top").style.display = "none";
+    }
+}
+
+/**
+ * Form Contact
+ */
+document.getElementById("form_contact").addEventListener("submit", showConfirmation);
+document.getElementById("form_newsletter").addEventListener("submit", showConfirmation);
+
+function showConfirmation(e) {
+    e.preventDefault();
+
+    if (e.target.id == "form_contact") {
+        document.getElementById("background_overlay").style.display = "block";
+        document.getElementById("confirmation_message_text").style.display = "block";
+        document.getElementById("confirmation").style.bottom = "10px";
+        setTimeout(() => {
+            document.getElementById("confirmation").style.bottom = "-210px";
+            document.getElementById("confirmation_message_text").style.display = "none";
+            document.getElementById("background_overlay").style.display = "none";
+
+        }, 2000);
+    }
+    else if (e.target.id == "form_newsletter") {
+        document.getElementById("background_overlay").style.display = "block";
+        document.getElementById("confirmation_newsletter_text").style.display = "block";
+        document.getElementById("confirmation").style.bottom = "10px";
+        setTimeout(() => {
+            document.getElementById("confirmation").style.bottom = "-210px";
+            document.getElementById("confirmation_newsletter_text").style.display = "none";
+            document.getElementById("background_overlay").style.display = "none";
+
+        }, 2000);
     }
 }

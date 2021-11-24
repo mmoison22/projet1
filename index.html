@@ -9,8 +9,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Hôtel Parimis</title>
 </head>
 
@@ -116,7 +116,7 @@
         </section>
         <section>
             <h2>Nous contacter</h2>
-            <form action="#" method="post">
+            <form action="#" method="post" id="form_contact">
                 <div class="center-box2 contact">
                     <div class="contact__grid">
                         <label for="contact_name" class="contact__label_name">Nom Prénom</label>
@@ -159,7 +159,7 @@
                         </a>
                     </div>
                 </div>
-                <form action="" method="get" class="center-box newsletter">
+                <form action="#" method="post" class="center-box newsletter" id="form_newsletter">
                     <div class="center-vertical">
                         <i class="far fa-envelope footer__icon"></i>
                         <label for="" class="newsletter__text">Inscrivez-vous à la newsletter :</label>
@@ -185,6 +185,12 @@
             <div class="footer__copyright">&#169; copryright 2021-2022</div>
         </div>
     </footer>
+    <div class="background_overlay" id="background_overlay"></div>
+    <div class="confirmation" id="confirmation">
+        <p id="confirmation_message_text">Votre message a bien été prise en compte.</p>
+        <p id="confirmation_newsletter_text">Votre inscription a bien été prise en compte.</p>
+        <img src="./assets/img/logo/logo2.webp" alt="">
+    </div>
     <script src="./assets/js/scripts.js"></script>
 </body>
 
