@@ -59,26 +59,17 @@ document.getElementById("form_newsletter").addEventListener("submit", showConfir
 function showConfirmation(e) {
     e.preventDefault();
 
-    if (e.target.id == "form_contact") {
-        document.getElementById("background_overlay").style.display = "block";
-        document.getElementById("confirmation_message_text").style.display = "block";
-        document.getElementById("confirmation").style.bottom = "10px";
-        setTimeout(() => {
-            document.getElementById("confirmation").style.bottom = "-210px";
-            document.getElementById("confirmation_message_text").style.display = "none";
-            document.getElementById("background_overlay").style.display = "none";
+    let _idText = e.target.id == "form_contact" ? "confirmation_message_text" : "confirmation_newsletter_text";
 
-        }, 2000);
-    }
-    else if (e.target.id == "form_newsletter") {
-        document.getElementById("background_overlay").style.display = "block";
-        document.getElementById("confirmation_newsletter_text").style.display = "block";
-        document.getElementById("confirmation").style.bottom = "10px";
-        setTimeout(() => {
-            document.getElementById("confirmation").style.bottom = "-210px";
-            document.getElementById("confirmation_newsletter_text").style.display = "none";
-            document.getElementById("background_overlay").style.display = "none";
+    // Pop Up
+    document.getElementById("background_overlay").style.display = "block";
+    document.getElementById(_idText).style.display = "block";
+    document.getElementById("confirmation").style.bottom = "10px";
 
-        }, 2000);
-    }
+    // Pop out
+    setTimeout(() => {
+        document.getElementById("confirmation").style.bottom = "-210px";
+        document.getElementById(_idText).style.display = "none";
+        document.getElementById("background_overlay").style.display = "none";
+    }, 2000);
 }
