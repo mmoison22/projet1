@@ -25,12 +25,7 @@ function scrollToTop() {
 
 function showGoToTopIcon() {
     let _currentScroll = document.documentElement.scrollTop;
-    if (_currentScroll > 600) {
-        document.getElementById("go_to_top").style.display = "block";
-    }
-    else {
-        document.getElementById("go_to_top").style.display = "none";
-    }
+    document.getElementById("go_to_top").classList.toggle("toggleDisplayOn", _currentScroll > 600 );
 }
 
 /**
