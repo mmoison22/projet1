@@ -5,33 +5,10 @@
 // Listener sur la div contenant les icones
 document.getElementById("burgermenu").addEventListener("click", toggleSideNav);
 
-// évite la répétition de code
-function reverseDisplay(x) {
-    if (x.style.display == "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-// burger icon <-> close icon
-function switchIcons() {
-    let menu = document.getElementById("nav-menu-icon");
-    let close = document.getElementById("nav-close-icon");
-    reverseDisplay(menu);
-    reverseDisplay(close);
-}
-
-// show/hide nav
 function toggleSideNav() {
-    let element = document.getElementById("nav-side");
-    let _element_css = window.getComputedStyle(element);
-    if (_element_css.height == "0px") {
-        element.style.height = "20px";
-    } else {
-        element.style.height = "0px";
-    }
-    switchIcons();
+    document.getElementById("nav-side").classList.toggle("toggleNav");
+    document.getElementById("nav-menu-icon").classList.toggle("toggleDisplayOff");  // from on to off
+    document.getElementById("nav-close-icon").classList.toggle("toggleDisplayOn");  // from off to on
 }
 
 /**
@@ -93,6 +70,14 @@ function showConfirmation(e) {
         document.getElementById(_idText).style.display = "none";
         document.getElementById("background_overlay").style.display = "none";
     }, 3000);
+}
+
+function showConfirmation2(e) {
+	e.preventDefault();
+	
+	let _idText = e.target.id == "form_contact" ? "confirmation_message_text" : "confirmation_newsletter_text";
+	document.getElementById(_idText).classList.toggle(".show_text");
+	document.getElementById("confirmation").classList.toggle(".hide_confirmation");	
 }
 
 

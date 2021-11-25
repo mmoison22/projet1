@@ -107,6 +107,10 @@ h1 {
   cursor: pointer;
 }
 
+.nav-close-icon {
+  display: none;
+}
+
 .nav-close-icon::before {
   font-family: "Material Icons";
   content: "";
@@ -621,6 +625,26 @@ footer {
   height: 100px;
 }
 
+.hide_confirmation {
+  height: 0px;
+}
+
+.show_text {
+  display: block;
+}
+
+.toggleDisplayOn {
+  display: block;
+}
+
+.toggleDisplayOff {
+  display: none;
+}
+
+.toggleNav {
+  height: 20px;
+}
+
 @media screen and (max-width: 900px) {
   .room_card {
     -webkit-box-orient: vertical;
@@ -646,6 +670,12 @@ footer {
   .footer-smallcontainer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .nav-menu {
+    display: none;
   }
 }
 

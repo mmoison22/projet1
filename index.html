@@ -16,9 +16,11 @@
 
 <body>
     <header class="center-box">
-		<div class="burgermenu" id="burgermenu">
-            <p class="nav-menu-icon" id="nav-menu-icon" style="display: block;"></p>
-            <p class="nav-close-icon" id="nav-close-icon" style="display: none;"></p>
+        <div class="burgermenu" id="burgermenu">
+            <!-- <p class="nav-menu-icon" id="nav-menu-icon" style="display: block;"></p>
+            <p class="nav-close-icon" id="nav-close-icon" style="display: none;"></p> -->
+            <p class="nav-menu-icon" id="nav-menu-icon"></p>
+            <p class="nav-close-icon" id="nav-close-icon"></p>
         </div>
         <div class="breadcrumb">
             <ul>
@@ -36,7 +38,7 @@
         </a>
     </header>
     <div class="nav-menu">
-        <nav class="nav-side" id="nav-side" height="0px">
+        <nav class="nav-side" id="nav-side">
             <ul>
                 <a href="index.html">
                     <li>ACCUEIL</li>
@@ -120,9 +122,11 @@
                 <div class="center-box2 contact">
                     <div class="contact__grid">
                         <label for="contact_name" class="contact__label_name">Nom Prénom</label>
-                        <input type="text" class="contact__input_name" minlength="3" pattern="[ \u00BF-\u1FFF\u2C00-\uD7FF\w]+" required>
+                        <input type="text" class="contact__input_name" minlength="3"
+                            pattern="[ \u00BF-\u1FFF\u2C00-\uD7FF\w]+" required>
                         <label for="contact_email" class="contact__label_email">Email</label>
-                        <input type="email" class="contact__input_email" pattern="[a-zA-Z0-9/\-//\./]+@[a-zA-Z0-9/\-/]+.[a-zA-Z]{2,3}" required>
+                        <input type="email" class="contact__input_email"
+                            pattern="[a-zA-Z0-9/\-//\./]+@[a-zA-Z0-9/\-/]+.[a-zA-Z]{2,3}" required>
                         <textarea name="" id="" cols="50" rows="5" placeholder="Tapez votre message ici"
                             class="contact__message" required></textarea>
                     </div>
@@ -134,7 +138,7 @@
 
             </form>
         </section>
-        <i class="fas fa-arrow-up go_to_top" id="go_to_top">  go top</i>
+        <i class="fas fa-arrow-up go_to_top" id="go_to_top"> go top</i>
     </main>
     <footer>
         <div class="footer-bigcontainer">
@@ -165,7 +169,8 @@
                         <label for="" class="newsletter__text">Inscrivez-vous à la newsletter :</label>
                     </div>
                     <div>
-                        <input type="text" name="" id="" placeholder="Votre email" pattern="[a-zA-Z0-9/\-//\./]+@[a-zA-Z0-9/\-/]+.[a-zA-Z]{2,3}" required>
+                        <input type="text" name="" id="" placeholder="Votre email"
+                            pattern="[a-zA-Z0-9/\-//\./]+@[a-zA-Z0-9/\-/]+.[a-zA-Z]{2,3}" required>
                         <button type="submit" class="button button2">OK</button>
                     </div>
                 </form>
