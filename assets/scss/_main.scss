@@ -53,3 +53,30 @@
     
     
 }
+.button {
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    font-size: 13px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: black;
+    font-family: "Open Sans";
+
+    &:hover{
+        background-color: $background2;
+        color: $white;
+    }
+}
+
+.room__name {
+    color: $secondary_color;
+    margin:0.4rem;
+    padding:0.4rem;
+    border-top: 0.1rem solid $secondary_color ;
+    border-bottom: 0.1rem solid $secondary_color ;
+}

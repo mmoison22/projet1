@@ -73,6 +73,30 @@
     font-weight: bold;
     font-family: "Cormorant Garamond"; }
 
+.button {
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  font-size: 13px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: black;
+  font-family: "Open Sans"; }
+  .button:hover {
+    background-color: #4D4123;
+    color: white; }
+
+.room__name {
+  color: #00258C;
+  margin: 0.4rem;
+  padding: 0.4rem;
+  border-top: 0.1rem solid #00258C;
+  border-bottom: 0.1rem solid #00258C; }
+
 @media screen and (min-width: 480px) and (max-width: 779px) {
   #resa {
     margin: 2em;
