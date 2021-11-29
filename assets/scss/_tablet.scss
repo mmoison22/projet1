@@ -17,19 +17,49 @@
 }
 
 // Media query for title and footer
+//old
 @media screen and (max-width: 700px) {
-    .title__text {
-        display: none;
-    }
+    // .title__text {
+    //     display: none;
+    // }
 
     .footer-smallcontainer {
         flex-wrap: wrap;
     }
 }
 
+// @media screen and (min-width: 500px) {
+//     .nav-menu {
+//         display: none;
+//     }
+    
+// }
+
+// Media Query for Header
 @media screen and (min-width: 500px) {
-    .nav-menu {
-        display: none;
+    header {
+        grid-template-columns: 20% auto 20%;
+        height: 70px;
     }
     
+    .header__menu-icon, .header__close-icon {
+        height: 35px;
+        width : 35px;
+    }
+
+    .header__mid {
+        justify-content: center;
+    }
+
+    .header__logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    .reserver {
+        top: 20px;
+        height: 30px;
+        width: 120px;
+        font-size: 14px;
+    }
 }

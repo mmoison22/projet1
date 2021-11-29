@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -15,42 +15,54 @@
 </head>
 
 <body>
-    <header class="center-box">
+    <!-- old header -->
+    <!-- <header>
         <div class="burgermenu" id="burgermenu">
-            <!-- <p class="nav-menu-icon" id="nav-menu-icon" style="display: block;"></p>
-            <p class="nav-close-icon" id="nav-close-icon" style="display: none;"></p> -->
             <p class="nav-menu-icon" id="nav-menu-icon"></p>
             <p class="nav-close-icon" id="nav-close-icon"></p>
         </div>
+        <p class="dark_theme_icon" id="dark_theme_icon"></p>
         <div class="breadcrumb">
             <ul>
                 <li><a href="./index.html"><i class="fas fa-home"></i></a></li>
                 <!-- <li>></li>
-                <li>réservation</li> -->
+                <li>réservation</li>
             </ul>
         </div>
         <a href="./index.html" class="title center-box">
-            <img src="./assets/img/logo/logo2.webp" height="50" width="50" alt="Hôtel Parimis" id="titre" />
-            <h1 class="title__text" id="titre">Hôtel Parimis</h1>
+            <img src="./assets/img/logo/logo2.webp" height="50" width="50" alt="Hôtel Parimis" />
+            <h1 class="title__text">Hôtel Parimis</h1>
         </a>
         <a href="./reservation.html">
             <div class="bouton-reserver center-box">R&#201;SERVER</div>
         </a>
+    </header> -->
+    <!-- new header -->
+    <header>
+        <div class="header__left">
+            <img src="./assets/img/menu.svg" alt="" class="header__menu-icon" id="menu-open">
+            <img src="./assets/img/close.svg" alt="" class="header__close-icon" id="menu-close">
+            <nav class="header__breadcrumb">
+                <ul>
+                    <li><a href="./index.html"><i class="fas fa-home breadcrumb-icon"></i></a></li>
+                    <li>></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__mid">
+            <a href="./index.html">
+                <img src="./assets/img/logo/logo2.webp" alt="" class="header__logo">
+                <h1>Hôtel Parimis</h1>
+            </a>
+        </div>
+        <div class="header__right">
+            <a href="#" class="reserver">RESERVER</a>
+        </div>
     </header>
-    <div class="nav-menu">
-        <nav class="nav-side" id="nav-side">
-            <ul>
-                <a href="index.html">
-                    <li>ACCUEIL</li>
-                </a>
-                <a href="chambres.html">
-                    <li>CHAMBRES</li>
-                </a>
-                <a href="reservation.html">
-                    <li>R&#201;SERVATION</li>
-                </a>
-            </ul>
-        </nav>
+    <div class="nav-menu" id="nav-menu">
+        <a href="index.html">ACCUEIL</a>
+        <a href="chambres.html">CHAMBRES</a>
+        <a href="reservation.html">R&#201;SERVATION</a>
     </div>
     <main>
         <figure>

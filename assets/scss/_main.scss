@@ -2,17 +2,28 @@ a {
     text-decoration: none;
 }
 
+// old
+// header {
+//     @include myflex1;
+//     height: 80px;
+// }
+
 header {
-    height: 80px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40px auto 20%;
+    height: 50px;
+    gap: 5px;
 }
 
-h1 {
-    margin-left: 10px;
-    color: $primary_color;
-    font-family: "Ovo";
-    font-size: 40px;
-    font-weight: 100;
-}
+// old
+// h1 {
+//     margin-left: 10px;
+//     color: $primary_color;
+//     font-family: "Ovo";
+//     font-size: 40px;
+//     font-weight: 100;
+// }
 
 .go_to_top {
     display: none;
@@ -26,59 +37,117 @@ h1 {
     cursor: pointer;
 }
 
-.nav-menu-icon {
-    &::before {
-        @include my-google-icon("\e5d2");
-    }
+.header__left {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    margin-left: 10px;
 }
 
-.nav-close-icon {
-    &::before {
-        @include my-google-icon("\e5cd");
-    }
+.header__menu-icon,
+.header__close-icon {
+    height: 30px;
+    width: 30px;
+    /* color for SVG: https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(68%) sepia(2%) saturate(5%) hue-rotate(21deg) brightness(89%) contrast(81%);
+    cursor: pointer;
+}
+
+.header__close-icon {
     display: none;
 }
 
-.nav-side {
+.header__mid {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    a {
+        @include myflex1;
+        gap: 5px;
+    }
+}
+
+.header__logo {
+    height: 30px;
+    width: 30px;
+}
+
+.header__right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+h1 {
+    color: goldenrod;
+    font-size: 2.5rem;
+    display: none;
+}
+
+ul {
+    padding: 0; // default = 40
+}
+
+// old
+// .nav-menu-icon {
+//     &::before {
+//         @include my-google-icon("\e5d2");
+//     }
+// }
+
+// old
+// .nav-close-icon {
+//     &::before {
+//         @include my-google-icon("\e5cd");
+//     }
+//     display: none;
+// }
+
+// .dark_mode_icon {
+//     &::before {
+//         @include my-google-icon("\e51c");
+//     }
+// }
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    list-style: none;
+    background-color: $secondary_color;
     transition-duration: 0.5s;
     height: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+    margin: 0;
+    gap: 1px;
+    line-height: 1.5;
+    font-size: 13px;
+    font-family: $header_menu_font;
+    // border-bottom: 1px silver solid;
+    // border-top: 1px silver solid;
+    // overflow: hidden;
 
-    ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding: 0;
-        margin: 0;
-        gap: 1px;
-        line-height: 1.5;
-        font-size: 13px;
-        font-family: $header_menu_font;
-        border-bottom: 1px silver solid;
-        border-top: 1px silver solid;
-    }
-    li {
-        text-align: center;
-        list-style: none;
-        background-color: $secondary_color;
-        &:hover {
-            background-color: white;
-        }
-    }
     a {
         color: white;
-        text-transform: capitalize;
         &:hover {
             color: $secondary_color;
+            background-color: white;
+            border-top: 1px silver solid;
         }
     }
 }
 
-.burgermenu {
-    margin-left: 20px;
-    display: none;
-}
+// old
+// .burgermenu {
+//     margin-left: 20px;
+//     display: none;
+// }
 
-.breadcrumb {
-    flex: 5%;
+// old
+.header__breadcrumb {
+    display: none;
     font-family: "Martel";
     font-size: 12px;
     color: $secondary_color;
@@ -88,7 +157,6 @@ h1 {
 
     ul {
         display: flex;
-        align-items: center;
         gap: 2px;
         li {
             list-style: none;
@@ -96,35 +164,38 @@ h1 {
     }
 }
 
-.title {
-    position: absolute;
+// old
+// .title {
+//     position: absolute;
 
-    img {
-        width: 50px;
-        height: 50px;
-    }
-}
+//     img {
+//         width: 50px;
+//         height: 50px;
+//     }
+// }
 
-.bouton-reserver {
+.reserver {
+    @include myflex1;
+
     position: fixed;
-    right: 30px;
-    top: 25px;
+    right: 10px;
+    top: 10px;
 
     z-index: 2;
 
-    height: 30px;
-    width: 150px;
+    height: 25px;
+    width: 120px;
 
     background-color: $secondary_color;
     color: $white;
+    border: 2px solid $secondary_color;
 
     font-family: "Raleway Bold";
-    font-size: 14px;
+    font-size: 13px;
 
     &:hover {
         background-color: $white;
         color: $secondary_color;
-        border: 2px solid $secondary_color;
     }
 }
 
@@ -275,7 +346,7 @@ footer {
     color: black;
     font-family: "Open Sans";
 
-    &:hover{
+    &:hover {
         background-color: $background2;
         color: $white;
     }
@@ -285,7 +356,7 @@ footer {
     font-size: 11px;
     padding: 4px 10px;
 
-    &:hover{
+    &:hover {
         background-color: black;
     }
 }
@@ -427,7 +498,7 @@ footer {
     @include myflex2;
     background-color: $white;
     margin: 0 auto;
-    
+
     width: 85%;
     font-family: "Open Sans";
     gap: 10px;
@@ -453,7 +524,7 @@ footer {
 }
 
 .show_confirmation {
-	height: 200px;
+    height: 200px;
     border: 5px solid $primary_color;
 }
 

@@ -1,3 +1,30 @@
-@media screen and(min-width:780px) {
+// Media Query for Header
+@media screen and (min-width: 820px) {
+    header {
+        height: 80px;
+    }
+
+    .header__mid {
+        height: 80px;
+    }
+
+    .header__menu-icon, .header__close-icon {
+        display: none;
+    }
+
+    h1 {
+        display: block;
+    }   
     
+    .header__breadcrumb {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .reserver {
+        right: 20px;
+    }
 }

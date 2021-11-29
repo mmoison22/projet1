@@ -3,12 +3,13 @@
  */
 
 // Listener sur la div contenant les icones
-document.getElementById("burgermenu").addEventListener("click", toggleSideNav);
+document.getElementById("menu-open").addEventListener("click", toggleNavBar);
+document.getElementById("menu-close").addEventListener("click", toggleNavBar);
 
-function toggleSideNav() {
-    document.getElementById("nav-side").classList.toggle("toggleNav");
-    document.getElementById("nav-menu-icon").classList.toggle("toggleDisplayOff");  // from on to off
-    document.getElementById("nav-close-icon").classList.toggle("toggleDisplayOn");  // from off to on
+function toggleNavBar() {
+    document.getElementById("nav-menu").classList.toggle("toggleNav");
+    document.getElementById("menu-open").classList.toggle("toggleDisplayOff");  // from on to off
+    document.getElementById("menu-close").classList.toggle("toggleDisplayOn");  // from off to on
 }
 
 /**
