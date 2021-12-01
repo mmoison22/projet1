@@ -6,7 +6,6 @@ $white: white;
 $background1: #DAA520;
 $background2: #4D4123;
 
-
 // Header
 $header_font: "Parisienne";
 $header_menu_font: "Open Sans";
@@ -28,12 +27,28 @@ $contact_fontsize: 0.8em;
 // Footer
 // $footer_color: rgb(73, 73, 73);
 $footer_color: #8C670B;
-$footer_icon_size: 1.4em;
 $footer_font: "Open Sans";
+$footer_iconsize: 14px;
 
 // Footer media icons
+$media_icon_size: 16px;
 $media_instagram_color: #8a3ab9;
 $media_facebook_color: #3b5998;
 $media_twitter_color: #00acee;
 $media_youtube_color: red;
 $media_pinterest_color: #E60023;
+
+// Popup animation
+//$popup_duration: 3000;
+
+// Go Top
+$gotop_font: "Open Sans";
+$gotop_fontsize: 8.5px;
+$gotop_color: $white;
+$gotop_bgcolor: black;
+
+// Breadcrumb
+$breadcrumb_iconsize: 16px;
+$breadcrumb_font: "Martel";
+$breadcrumb_fontsize: 12px;
+$breadcrumb_color: $secondary_color;

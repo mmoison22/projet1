@@ -26,7 +26,7 @@ function scrollToTop() {
 
 function showGoToTopIcon() {
     let _currentScroll = document.documentElement.scrollTop;
-    document.getElementById("go_to_top").classList.toggle("toggleDisplayOn", _currentScroll > 600 );
+    document.getElementById("go_to_top").classList.toggle("toggleGoTop", _currentScroll > 600 );
 }
 
 /**

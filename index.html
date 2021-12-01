@@ -8,8 +8,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
     <link rel="stylesheet" href="./assets/css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Hôtel Parimis</title>
 </head>
@@ -21,7 +19,7 @@
             <img src="./assets/img/close.svg" alt="" class="header__close-icon" id="menu-close">
             <nav class="header__breadcrumb">
                 <ul>
-                    <li><a href="./index.html"><i class="fas fa-home breadcrumb-icon"></i></a></li>
+                    <li><a href="./index.html"><img src="./assets/img/house.svg" alt="Home" class="breadcrumb-icon"></a></li>
                     <li>></li>
                 </ul>
             </nav>
@@ -33,7 +31,7 @@
             </a>
         </div>
         <div class="header__right">
-            <a href="#" class="reserver">RESERVER</a>
+            <a href="reservation.html" class="reserver">RESERVER</a>
         </div>
     </header>
     <div class="nav-menu" id="nav-menu">
@@ -127,7 +125,7 @@
 
             </form>
         </section>
-        <i class="fas fa-arrow-up go_to_top" id="go_to_top"> go top</i>
+        <div class="go_to_top" id="go_to_top"><img src="./assets/img/gotop.svg" class="gotop-icon" alt="gotop">GO TOP</div>
     </main>
     <footer>
         <div class="footer-bigcontainer">
@@ -135,33 +133,27 @@
                 <div class="center-box media">
                     <p>Rejoignez-nous sur :</p>
                     <div class="footer__social-items">
-                        <!-- <a href="#" title="Instagram" class="footer__social-link">
-                            <div class="footer__social-item footer__icon"><i class="fab fa-instagram"></i></div>
-                        </a> -->
+
                         <a href="#" title="Instagram" class="footer__social-link">
                             <div class="footer__social-item"><img src="./assets/img/brands/instagram.svg" alt="Instagram"></div>
                         </a>
                         <a href="#" title="Facebook" class="footer__social-link">
-                            <!-- <div class="footer__social-item footer__icon"><i class="fab fa-facebook"></i></div> -->
                             <div class="footer__social-item"><img src="./assets/img/brands/facebook.svg" alt="Facebook"></div>
                         </a>
                         <a href="#" title="Twitter" class="footer__social-link">
-                            <!-- <div class="footer__social-item footer__icon"><i class="fab fa-twitter"></i></div> -->
                             <div class="footer__social-item"><img src="./assets/img/brands/twitter.svg" alt="Twitter"></div>
                         </a>
                         <a href="#" title="Youtube" class="footer__social-link">
-                            <!-- <div class="footer__social-item footer__icon"><i class="fab fa-youtube"></i></div> -->
                             <div class="footer__social-item"><img src="./assets/img/brands/youtube.svg" alt="Youtube"></div>
                         </a>
                         <a href="#" title="Pinterest" class="footer__social-link">
-                            <!-- <div class="footer__social-item footer__icon"><i class="fab fa-pinterest-p"></i></div> -->
                             <div class="footer__social-item"><img src="./assets/img/brands/pinterest.svg" alt="Pinterest"></div>
                         </a>
                     </div>
                 </div>
                 <form action="#" method="post" class="center-box newsletter" id="form_newsletter">
                     <div class="center-vertical">
-                        <i class="far fa-envelope footer__icon"></i>
+                        <img src="./assets/img/envelope.svg" alt="newsletter" class="footer__icon">
                         <label for="" class="newsletter__text">Inscrivez-vous à la newsletter :</label>
                     </div>
                     <div>
@@ -171,13 +163,13 @@
                     </div>
                 </form>
                 <div class="footer__address_grid">
-                    <i class="fas fa-map-marker-alt footer__icon footer_map_icon"></i>
+                    <img src="./assets/img/map.svg" alt="Adress" class="footer__icon">
                     <div class="footer__address_text">
                         <address>Hôtel Parimis</address>
                         <address>1 rue du grand palais</address>
                         <address>75001, Paris</address>
                     </div>
-                    <i class="fas fa-phone footer__phone_icon"></i>
+                    <img src="./assets/img/phone.svg" alt="Phone Number" class="footer__icon">
                     <a href="tel:#" class="footer__phone">
                         <p>+33 (0)1 02 03 04 05 </p>
                     </a>
