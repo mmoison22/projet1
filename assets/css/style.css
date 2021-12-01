@@ -50,7 +50,9 @@
   #resa p {
     color: #daa520;
     font-weight: bold;
-    padding-left: 0.5em; }
+    padding-left: 0.5em;
+    border-top: 0.1rem solid #daa520;
+    margin-top: 2rem; }
 
 .room_selection {
   margin: 0.5em 0; }
@@ -60,17 +62,16 @@
 #confirmation {
   background-color: #DDAE36;
   color: white;
-  margin: 5rem 20rem;
+  margin: 1.5rem;
   padding: 1rem;
   display: block;
   text-align: center; }
   #confirmation h2 {
     margin: 2rem auto;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-family: "EB Garamond"; }
   #confirmation p {
     font-size: 1.2rem;
-    font-weight: bold;
     font-family: "Cormorant Garamond"; }
 
 .button {
@@ -87,15 +88,31 @@
   color: black;
   font-family: "Open Sans"; }
   .button:hover {
-    background-color: #4D4123;
+    background-color: #daa520;
     color: white; }
 
 .room__name {
   color: #00258C;
-  margin: 0.4rem;
+  margin: 0.4rem 0.4rem 0;
   padding: 0.4rem;
+  border-top: 0.1rem solid #00258C; }
+  .room__name span {
+    font-weight: lighter; }
+
+form h1 {
+  color: #daa520;
+  text-align: center; }
+
+.fab {
+  font-size: 1.5rem;
+  color: #daa520; }
+
+.border_bottom {
+  margin: 0 0.8rem;
+  width: 50vw;
+  height: 1px;
   border-top: 0.1rem solid #00258C;
-  border-bottom: 0.1rem solid #00258C; }
+  margin-bottom: 0.4rem; }
 
 @media screen and (min-width: 480px) and (max-width: 779px) {
   #resa {
@@ -112,7 +129,22 @@
     display: flex;
     flex-direction: column; }
     .room_selection-label {
-      flex-direction: row; } }
+      flex-direction: row; }
+
+  #confirmation {
+    background-color: #DDAE36;
+    color: white;
+    margin: 2rem 10rem;
+    padding: 1rem;
+    display: block;
+    text-align: center; }
+    #confirmation h2 {
+      margin: 2rem auto;
+      font-size: 1.7rem;
+      font-family: "EB Garamond"; }
+    #confirmation p {
+      font-size: 1.2rem;
+      font-family: "Cormorant Garamond"; } }
 @media screen and (min-width: 780px) {
   #resa {
     margin: 10em;
@@ -128,14 +160,36 @@
       flex: 1; }
     .form__contact-group input {
       flex: 3; }
+    .form__contact-group select {
+      flex: 3; }
+    .form__contact-group textarea {
+      flex: 3; }
 
   .room_selection {
     display: flex;
     flex-direction: column;
     margin: auto 1em;
-    justify-content: space-between; }
+    justify-content: space-around; }
     .room_selection-label {
-      flex-direction: row; } }
+      flex-direction: row; }
+
+  #test {
+    justify-content: space-evenly; }
+
+  #confirmation {
+    background-color: #DDAE36;
+    color: white;
+    margin: 5rem 20rem;
+    padding: 1rem;
+    display: block;
+    text-align: center; }
+    #confirmation h2 {
+      margin: 2rem auto;
+      font-size: 1.7rem;
+      font-family: "EB Garamond"; }
+    #confirmation p {
+      font-size: 1.2rem;
+      font-family: "Cormorant Garamond"; } }
 @media screen and (max-width: 501px) {
   body section {
     margin: 0; }

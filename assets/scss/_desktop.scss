@@ -2,7 +2,6 @@
     #resa {
         margin: 10em;
         padding: 2em;
-        //background-color: none;
         border: 0.2em solid $primary_color;
     }
     .form__contact {
@@ -17,15 +16,41 @@
             input {
                 flex:3;
             }
+            select{
+                flex: 3;
+            }
+            textarea{
+                flex: 3;
+            }
         }
     } 
     .room_selection {
         display: flex;
         flex-direction: column;
         margin: auto 1em;
-        justify-content: space-between;
+        justify-content: space-around;
         &-label {
             flex-direction: row;
+        }
+    }
+    #test {
+        justify-content: space-evenly;
+    }
+    #confirmation {
+        background-color: #DDAE36;
+        color: $white;
+        margin: 5rem 20rem;
+        padding: 1rem;
+        display: block;
+        text-align: center;
+        h2 {
+            margin: 2rem auto;
+            font-size: 1.7rem;
+            font-family: "EB Garamond";
+        }
+        p {
+            font-size: 1.2rem; 
+            font-family: "Cormorant Garamond";
         }
     }
 }
