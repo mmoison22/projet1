@@ -50,7 +50,7 @@ header {
     height: 30px;
     width: 30px;
     /* color for SVG: https://codepen.io/sosuke/pen/Pjoqqp */
-    filter: invert(68%) sepia(2%) saturate(5%) hue-rotate(21deg) brightness(89%) contrast(81%);  // svg en gris
+    filter: invert(68%) sepia(2%) saturate(5%) hue-rotate(21deg) brightness(89%) contrast(81%); // svg en gris
     cursor: pointer;
 }
 
@@ -341,53 +341,34 @@ footer {
 .footer__social-items {
     display: flex;
     gap: 5px;
-    a {
-        color: $white;
-        &:visited {
-            color: none;
-        }
-        // &:hover{
-        //     color: red;
-        // }
-    }
 }
 
 // Définit la couleur de base du SVG ainsi que la couleur en hover
 .footer__social-link {
     // instagram
-    &:nth-child(1) {  
-        @include socialLinkColor($media_instagram_color,30%,41%,3168%,259deg,83%,90%);
+    &:nth-child(1) {
+        @include socialLinkColor(30%, 41%, 3168%, 259deg, 83%, 90%);
     }
 
     // facebook
     &:nth-child(2) {
-        @include socialLinkColor($media_facebook_color,27%,64%,745%,187deg,96%,83%);
+        @include socialLinkColor(27%, 64%, 745%, 187deg, 96%, 83%);
     }
 
     // twitter
     &:nth-child(3) {
-        @include socialLinkColor($media_twitter_color,52%,59%,3151%,163deg,98%,102%);
+        @include socialLinkColor(52%, 59%, 3151%, 163deg, 98%, 102%);
     }
 
     // youtube
     &:nth-child(4) {
-        @include socialLinkColor($media_youtube_color,15%,90%,7429%,0deg,98%,113%);
+        @include socialLinkColor(15%, 90%, 7429%, 0deg, 98%, 113%);
     }
 
     // pinterest
     &:nth-child(5) {
-        @include socialLinkColor($media_pinterest_color,11%,85%,7427%,347deg,89%,104%);
+        @include socialLinkColor(11%, 85%, 7427%, 347deg, 89%, 104%);
     }
-}
-
-.footer__social-item {
-    // font-size: $footer_icon_size;
-    height: $media_icon_size;
-    width: $media_icon_size;
-    padding: 1px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .newsletter {
@@ -466,7 +447,7 @@ footer {
 .confirmation {
     @include myflex2;
     background-color: $white;
-    width: 85%;  // 85% de la largeur du viewport
+    width: 85%; // 85% de la largeur du viewport
 
     // centrage de la popup
     left: 50%;

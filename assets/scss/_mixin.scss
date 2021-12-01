@@ -25,18 +25,24 @@
 }
 
 // propriétés de la div container pour icone media
-@mixin socialLinkColor($mycolor,$invert,$sepia,$saturate,$hue,$brightness,$contrast) {
+@mixin socialLinkColor($invert,$sepia,$saturate,$hue,$brightness,$contrast) {
+    // @include myflex1;
+    height: $media_icon_size;
+    width: $media_icon_size;
     transition-duration: 0.2s;
-    &:hover {
-        background-color: $white;
-    }
+    padding: 1px;
     img {
+        @include svgToWhite;
         height: $media_icon_size;
         width: $media_icon_size;
-        @include svgToWhite;
-        &:hover {  // svg de couleur d'origine du media
+    }
+
+    &:hover { // svg de couleur d'origine du media
+        background-color: $white;
+        img{
             filter: invert($invert) sepia($sepia) saturate($saturate) hue-rotate($hue) brightness($brightness) contrast($contrast);
         }
     }
+
 }
 
