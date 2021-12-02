@@ -31,9 +31,6 @@
                 <h1>Hôtel Parimis</h1>
             </a>
         </div>
-        <!-- <div class="header__right">
-            <a href="reservation.html" class="reserver">RESERVER</a>
-        </div> -->
         <a href="reservation.html" class="reserver header__right">RESERVER</a>
     </header>
     <div class="nav-menu" id="nav-menu">
@@ -99,22 +96,21 @@
         </section>
         <section>
             <h2>Nous contacter</h2>
-            <form action="#" method="post" id="form_contact">
-                <div class="center-box2 contact">
-                    <div class="contact__grid">
-                        <label for="contact_name" class="contact__label_name">Nom Prénom</label>
-                        <input type="text" class="contact__input_name" minlength="3"
-                            pattern="[ \u00BF-\u1FFF\u2C00-\uD7FF\w]+" required>
-                        <label for="contact_email" class="contact__label_email">Email</label>
-                        <input type="email" class="contact__input_email"
-                            pattern="[a-zA-Z0-9/\-//\./]+@[a-zA-Z0-9/\-/]+.[a-zA-Z]{2,3}" required>
-                        <textarea name="" id="" cols="50" rows="5" placeholder="Tapez votre message ici"
-                            class="contact__message" required></textarea>
-                    </div>
-                    <div class="contact_buttons">
-                        <button type="submit" class="button">Envoyer</button>
-                        <button type="reset" class="button">Annuler</button>
-                    </div>
+            <form action="#" method="post" id="form_contact" class="contact">
+
+                <div class="contact__grid">
+                    <label for="contact_name" class="contact__label_name">Nom Prénom</label>
+                    <input type="text" class="contact__input_name" minlength="3"
+                        pattern="[ \u00BF-\u1FFF\u2C00-\uD7FF\w]+" required>
+                    <label for="contact_email" class="contact__label_email">Email</label>
+                    <input type="email" class="contact__input_email"
+                        pattern="[a-zA-Z0-9/\-//\./]+@[a-zA-Z0-9/\-/]+.[a-zA-Z]{2,3}" required>
+                    <textarea name="" id="" cols="50" rows="5" placeholder="Tapez votre message ici"
+                        class="contact__message" required></textarea>
+                </div>
+                <div class="contact_buttons">
+                    <button type="submit" class="button">Envoyer</button>
+                    <button type="reset" class="button">Annuler</button>
                 </div>
 
             </form>

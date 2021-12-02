@@ -207,14 +207,14 @@ h3 {
         position: relative;
     }
 
-    p {
+    a {
         margin-right: 40px;
     }
 }
 
 .bouton-details {
     position: absolute;
-    right: 50px;
+    right: 10px;
     bottom: 10px;
 
     border: solid 2px $secondary_color;
@@ -231,27 +231,21 @@ h3 {
 }
 
 .contact {
+    @include myflex2;
     background-color: rgba($color: $background1, $alpha: 0.05);
-    // margin: 0;
     form {
-        margin: 0px 100px 0px 100px;
-        // div {
-        //     input {
-        //         width: 10%;
-        //     }
-        // }
+        // margin: 0px 100px 0px 100px;
     }
 }
 
 .contact__grid {
-    // width: 500px;
-    padding: 20px;
     display: grid;
     grid-template-areas:
         "a b"
         "c d"
         "e e";
-    grid-template-columns: 110px auto;
+    grid-template-columns: 110px 70vw; // width
+    padding: 20px;
     justify-content: center;
     align-items: center;
     font-family: $contact_font;
@@ -260,8 +254,6 @@ h3 {
 
 .contact__message {
     grid-area: e;
-    min-width: 350px;
-    min-height: 100px;
 }
 
 .contact_buttons {
