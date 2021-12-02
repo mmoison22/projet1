@@ -15,11 +15,16 @@
     border-top: 0.2em solid $primary_color;
     border-bottom: 0.2em solid $primary_color;
     p {
+        font-size: 1.5rem;
         color: $primary_color;
         font-weight: bold;
         padding-left: 0.5em;
         border-top: 0.1rem solid $primary_color ;
         margin-top:2rem;
+    }
+    h2 {
+        color:$primary_color;
+        text-align: center;
     }
 
 }
@@ -42,7 +47,7 @@
         font-family: "EB Garamond";
     }
     p {
-        font-size: 1.2rem; 
+        font-size: 1.4rem; 
         font-family: "Cormorant Garamond";
     }
 }
@@ -76,10 +81,10 @@
     }
 }
 
-form h1 {
-    color:$primary_color;
-    text-align: center;
-}
+// form h2 {
+//     color:$primary_color;
+//     text-align: center;
+// }
 .fab {
     font-size: 1.5rem;
     color: $primary_color

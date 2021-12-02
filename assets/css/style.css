@@ -48,11 +48,15 @@
   border-top: 0.2em solid #daa520;
   border-bottom: 0.2em solid #daa520; }
   #resa p {
+    font-size: 1.5rem;
     color: #daa520;
     font-weight: bold;
     padding-left: 0.5em;
     border-top: 0.1rem solid #daa520;
     margin-top: 2rem; }
+  #resa h2 {
+    color: #daa520;
+    text-align: center; }
 
 .room_selection {
   margin: 0.5em 0; }
@@ -71,7 +75,7 @@
     font-size: 1.7rem;
     font-family: "EB Garamond"; }
   #confirmation p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-family: "Cormorant Garamond"; }
 
 .button {
@@ -98,10 +102,6 @@
   border-top: 0.1rem solid #00258C; }
   .room__name span {
     font-weight: lighter; }
-
-form h1 {
-  color: #daa520;
-  text-align: center; }
 
 .fab {
   font-size: 1.5rem;
