@@ -8,14 +8,15 @@
         height: 80px;
     }
 
-    .header__menu-icon, .header__close-icon {
+    .header__menu-icon,
+    .header__close-icon {
         display: none;
     }
 
     h1 {
         display: block;
-    }   
-    
+    }
+
     .header__breadcrumb {
         display: block;
     }
@@ -29,7 +30,7 @@
     }
 }
 
-@media screen and (min-width:780px) {
+@media screen and (min-width: 780px) {
     #resa {
         margin: 10em;
         padding: 2em;
@@ -42,19 +43,19 @@
             margin: 1em;
             text-align: end;
             label {
-                flex:1;
+                flex: 1;
             }
             input {
-                flex:3;
-            }
-            select{
                 flex: 3;
             }
-            textarea{
+            select {
+                flex: 3;
+            }
+            textarea {
                 flex: 3;
             }
         }
-    } 
+    }
     .room_selection {
         display: flex;
         flex-direction: column;
@@ -68,7 +69,7 @@
         justify-content: space-evenly;
     }
     #confirmation {
-        background-color: #DDAE36;
+        background-color: #ddae36;
         color: $white;
         margin: 5rem 20rem;
         padding: 1rem;
@@ -80,8 +81,24 @@
             font-family: "EB Garamond";
         }
         p {
-            font-size: 1.2rem; 
+            font-size: 1.2rem;
             font-family: "Cormorant Garamond";
         }
+    }
+}
+
+// Footer
+@media screen and (min-width: 900px) {
+    footer {
+        grid-template-areas:
+            "footer__media footer__newsletter footer__address"
+            "footer__copyright footer__copyright footer__copyright";
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 10px;
+    }
+
+    .footer__media,
+    .footer__newsletter {
+        border-right: 1px solid $footer_color;
     }
 }
