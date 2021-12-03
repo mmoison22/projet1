@@ -11,6 +11,15 @@
     align-items: center;
 }
 
+@mixin myflex-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 // For Google Icons
 @mixin my-google-icon($fontcode) {
     font-family: $iconfontfamily;

@@ -26,8 +26,10 @@ $contact_fontsize: 0.8em;
 
 // Footer
 // $footer_color: rgb(73, 73, 73);
-$footer_color: #8C670B;
+$footer_color: $white;
+$footer_bgcolor: $background2;
 $footer_font: "Open Sans";
+$footer_fontsize: 13px;
 $footer_iconsize: 14px;
 
 // Footer media icons

@@ -51,6 +51,6 @@ function showConfirmation(e) {
 
 function popMessage(_idText) {
     document.getElementById("background_overlay").classList.toggle("toggleDisplayOn");
-    document.getElementById("confirmation").classList.toggle("show_confirmation");
+    document.getElementById("popup").classList.toggle("show_popup");
 	document.getElementById(_idText).classList.toggle("toggleDisplayOn");
 }

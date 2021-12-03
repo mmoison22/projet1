@@ -63,3 +63,29 @@
         font-size: 14px;
     }
 }
+
+// Footer
+@media screen and (min-width: 500px) {
+    footer {
+      grid-template-areas:
+        "footer__media footer__newsletter"
+        "footer__address footer__address"
+        "footer__copyright footer__copyright";
+      grid-template-columns: 1fr 1fr;
+      padding-top: 20px;
+    }
+  
+    .footer__media {
+      border-right: 1px solid $footer_color;
+    }
+  
+    .footer__newsletter {
+      border-bottom: none;
+      border-top: none;
+    }
+
+    .footer__address {
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+  }

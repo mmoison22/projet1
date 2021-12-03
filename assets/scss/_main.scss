@@ -233,9 +233,9 @@ h3 {
 .contact {
     @include myflex2;
     background-color: rgba($color: $background1, $alpha: 0.05);
-    form {
-        // margin: 0px 100px 0px 100px;
-    }
+    // form {
+    //     // margin: 0px 100px 0px 100px;
+    // }
 }
 
 .contact__grid {
@@ -261,8 +261,54 @@ h3 {
 }
 
 footer {
+    display: grid;
+    grid-template-areas:
+        "footer__media"
+        "footer__newsletter"
+        "footer__address"
+        "footer__copyright";
+
     font-family: $footer_font;
-    font-size: 12px;
+    font-size: $footer_fontsize;
+    align-items: center;
+
+    color: $footer_color;
+    background-color: $footer_bgcolor;
+
+    padding: 10px;
+}
+
+.footer__media {
+    grid-area: footer__media;
+    @include myflex-footer;
+    gap: 5px;
+
+    p {
+        margin: 0; // default=16px
+    }
+}
+
+.footer__newsletter {
+    grid-area: footer__newsletter;
+    @include myflex-footer;
+}
+
+.footer__address {
+    grid-area: footer__address;
+    display: grid;
+    grid-template-areas:
+        "a b"
+        "c d";
+    align-items: center;
+    grid-template-columns: 25px auto;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer__copyright {
+    grid-area: footer__copyright;
+    @include myflex-footer;
 }
 
 .footer-bigcontainer {
@@ -391,15 +437,16 @@ footer {
     @include svgToWhite;
 }
 
-.footer__address_grid {
-    display: grid;
-    grid-template-areas:
-        "a b"
-        "c d";
-    align-items: center;
-    grid-template-columns: 25px auto;
-    justify-content: center;
-}
+// old
+// .footer__address_grid {
+//     display: grid;
+//     grid-template-areas:
+//         "a b"
+//         "c d";
+//     align-items: center;
+//     grid-template-columns: 25px auto;
+//     justify-content: center;
+// }
 
 .footer_map_icon {
     grid-area: a;
@@ -421,9 +468,10 @@ footer {
     color: $white;
 }
 
-.footer__copyright {
-    margin: 10px;
-}
+// old
+// .footer__copyright {
+//     margin: 10px;
+// }
 
 .background_overlay {
     display: none;
@@ -436,7 +484,7 @@ footer {
     background-color: rgba($color: black, $alpha: 0.6);
 }
 
-.confirmation {
+.popup {
     @include myflex2;
     background-color: $white;
     width: 85%; // 85% de la largeur du viewport
@@ -461,11 +509,11 @@ footer {
     }
 }
 
-.confirmation_text {
+.popup_text {
     display: none;
 }
 
-.show_confirmation {
+.show_popup {
     height: 200px;
     border: 5px solid $primary_color;
 }
