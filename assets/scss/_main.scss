@@ -481,3 +481,120 @@ footer {
 .toggleNav {
     height: 20px;
 }
+
+//Mika
+.form__contact {
+    &-group {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+    }
+    &-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+} 
+#resa {
+    padding: 0.5em;
+    border-top: 0.2em solid $primary_color;
+    border-bottom: 0.2em solid $primary_color;
+    p {
+        font-size: 1.5rem;
+        color: $primary_color;
+        font-weight: bold;
+        padding-left: 0.5em;
+        border-top: 0.1rem solid $primary_color ;
+        margin-top:2rem;
+    }
+    h2 {
+        color:$primary_color;
+        text-align: center;
+    }
+
+}
+.room_selection {
+    margin: 0.5em 0;
+    &-label {
+        flex-direction: row;
+    }
+}
+#confirmation {
+    background-color: #DDAE36;
+    color: $white;
+    margin: 1.5rem;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    h2 {
+        margin: 2rem auto;
+        color: $white;
+        font-size: 1.7rem;
+        font-family: "EB Garamond";
+    }
+    p {
+        font-size: 1.4rem; 
+        font-family: "Cormorant Garamond";
+    }
+}
+.button {
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    font-size: 13px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: black;
+    font-family: "Open Sans";
+
+    &:hover{
+        background-color: $primary_color;
+        color: $white;
+    }
+}
+
+.room__name {
+    color: $secondary_color;
+    margin: 0.4rem 0.4rem 0 ;
+    padding:0.4rem;
+    border-top: 0.1rem solid $secondary_color ;
+    span {
+        font-weight: lighter;
+    }
+}
+
+// form h2 {
+//     color:$primary_color;
+//     text-align: center;
+// }
+.fab {
+    font-size: 1.5rem;
+    color: $primary_color
+}
+.border_bottom {
+    margin: 0 0.8rem;
+    width: 50vw;
+    height: 1px;
+    border-top: 0.1rem solid $secondary_color;
+    margin-bottom: 0.4rem;
+}
+.reserver2 {
+    height: 25px;
+    width: 120px;
+
+    background-color: $secondary_color;
+    color: $white;
+    border: 2px solid $secondary_color;
+
+    font-family: "Raleway Bold";
+    font-size: 13px;
+
+    &:hover {
+        background-color: $white;
+        color: $secondary_color;
+    }
+}
