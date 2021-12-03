@@ -309,13 +309,8 @@ body {
   font-family: "Source Serif Pro";
 }
 
-body section {
-  margin: 40px 50px 10px 50px;
-}
-
-body section p {
-  margin-left: 10px;
-  margin-right: 10px;
+section {
+  padding: 10px;
 }
 
 h3 {
@@ -328,24 +323,46 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 10px;
-  margin-top: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: rgba(218, 165, 32, 0.05);
+  border-bottom: 1px rgba(192, 192, 192, 0.6) solid;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.room_card:nth-child(-n+4) {
+  margin-bottom: 20px;
 }
 
 .room_card img {
-  width: 500px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.room_card div {
-  margin-left: 40px;
-  position: relative;
+.room_card div h3 {
+  padding-left: 20px;
 }
 
-.room_card a {
-  margin-right: 40px;
+.room_card div p {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.room_card div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 .button_details {
@@ -358,9 +375,6 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
   border: solid 2px #00258C;
   color: #00258C;
   font-family: "Raleway SemiBold";
@@ -993,21 +1007,14 @@ footer {
   color: #00258C;
 }
 
-@media screen and (max-width: 900px) {
-  .room_card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+@media screen and (min-width: 500px) {
+  section {
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .room_card img, .room_card div {
-    min-width: 400px;
-    width: auto;
-  }
-  .button_details {
-    position: relative;
-    margin-top: 30px;
-    margin-left: 20px;
+  section p {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -1140,6 +1147,38 @@ footer {
   }
 }
 
+@media screen and (min-width: 950px) {
+  main section {
+    margin: 0 100px 0 100px;
+  }
+  .room_card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-bottom: none;
+  }
+  .room_card:nth-child(-n+4) {
+    margin-bottom: 40px;
+  }
+  .room_card img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .room_card div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 3fr 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 @media screen and (min-width: 780px) {
   #resa {
     margin: 10em;
@@ -1229,31 +1268,6 @@ footer {
   .footer__media,
   .footer__newsletter {
     border-right: 1px solid white;
-  }
-}
-
-@media screen and (max-width: 501px) {
-  main section {
-    margin: 0;
-  }
-  main section h2, main section h3 {
-    margin-left: 10px;
-  }
-  main section p {
-    margin-left: 20px;
-    margin-bottom: 20px;
-  }
-  .bouton-details {
-    height: 30px;
-    margin-left: 30px;
-  }
-  .room_card {
-    margin: 0;
-    border-bottom: 1px solid rgba(192, 192, 192, 0.7);
-    margin-bottom: 20px;
-  }
-  .room_card div {
-    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -12,8 +12,12 @@ $header_menu_font: "Open Sans";
 $header_menu_fontsize: "";
 
 // Main
-$main_font: "Cormorant Garamond";
+// $main_font: "Cormorant Garamond";
+$main_font: "Source Serif Pro";
 $main_fontsize: "15px";
+
+// Room card
+$room_card_bordercolor: rgba($color: silver, $alpha: 0.6);
 
 // Variables pour les icônes du header
 $iconfontfamily: 'Material Icons';

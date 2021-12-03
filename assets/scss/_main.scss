@@ -175,15 +175,20 @@ h2 {
 }
 
 body {
-    font-family: "Source Serif Pro";
-    section {
-        margin: 40px 50px 10px 50px;
+    font-family: $main_font;
+    // section {
+    //     margin: 40px 50px 10px 50px;
 
-        p {
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-    }
+    //     p {
+    //         margin-left: 10px;
+    //         margin-right: 10px;
+    //     }
+    // }
+}
+
+section {
+    padding: 10px;
+    // gap: 20px;
 }
 
 h3 {
@@ -194,29 +199,45 @@ h3 {
 
 .room_card {
     display: flex;
-    margin-left: 10px;
-    margin-top: 50px;
+    flex-direction: column;
     background-color: rgba($color: $background1, $alpha: 0.05);
+    border-bottom: 1px $room_card_bordercolor solid;
+    transition-duration: 1s;
+
+    &:nth-child(-n+4) {  // les 3 premiers enfants
+        margin-bottom: 20px;
+    }
+
     img {
-        width: 500px;
         object-fit: cover;
     }
 
     div {
-        margin-left: 40px;
-        position: relative;
-    }
+        h3 {
+            padding-left: 20px;
+        }
 
-    a {
-        margin-right: 40px;
+        p {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        div {  // flexbox pour aligner le bouton details
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            padding-right: 20px;
+            padding-bottom: 20px;
+        }
+        
     }
 }
 
 .button_details {
     @include myflex1;
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
+    // position: absolute;
+    // right: 10px;
+    // bottom: 10px;
 
     border: solid 2px $secondary_color;
     color: $secondary_color;

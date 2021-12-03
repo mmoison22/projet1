@@ -1,19 +1,15 @@
 // Media query for index/presentation
-@media screen and (max-width: 900px) {
-    .room_card {
-        flex-direction: column;
+@media screen and (min-width: 500px) {
+    section {
+        padding-left: 20px;
+        padding-right: 20px;
 
-        img, div {
-            min-width: 400px;
-            width: auto;
+        p {
+            padding-left: 20px;
+            padding-right: 20px;
         }
     }
 
-    .button_details {
-        position: relative;
-        margin-top: 30px;
-        margin-left: 20px;
-    }
 }
 
 // Media query for title and footer
@@ -27,13 +23,6 @@
         flex-wrap: wrap;
     }
 }
-
-// @media screen and (min-width: 500px) {
-//     .nav-menu {
-//         display: none;
-//     }
-    
-// }
 
 // Media Query for Header
 @media screen and (min-width: 500px) {

@@ -30,6 +30,37 @@
     }
 }
 
+
+// main
+@media screen and (min-width: 950px) {
+    main {
+           section {
+                margin: 0 100px 0 100px;
+        }
+    }
+
+    .room_card {
+        flex-direction: row;
+        border-bottom: none;
+
+        &:nth-child(-n+4) {
+            margin-bottom: 40px;
+        }
+
+        img {
+            flex: 1;
+        }
+
+        div {
+            flex: 1;
+            display: grid;
+            grid-template-rows: 1fr 3fr 1fr;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+}
+
 // mika
 @media screen and (min-width: 780px) {
     #resa {
