@@ -398,6 +398,7 @@ h3 {
   -ms-grid-columns: 110px 70vw;
       grid-template-columns: 110px 70vw;
   padding: 20px;
+  gap: 5px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
