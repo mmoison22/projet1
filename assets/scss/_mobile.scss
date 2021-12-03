@@ -27,41 +27,4 @@
         border-bottom: 1px solid rgba($color: silver, $alpha: 0.7);
         margin-bottom: 20px;
     }
-
-    .breadcrumb {
-        display: none;
-    }
-
-    .burgermenu {
-        flex: 10%;
-        display: block;
-    }
-
-    .bouton-reserver {
-        right: 1px;
-    }
-
-    .header__top {
-        padding-top: 10px;
-    }
-
-    .footer-smallcontainer {
-        flex-direction: column;
-        
-        // on reset toutes les marges internes
-        > * {
-            margin: 0;
-            padding: 0;
-        }
-
-        margin-top: 5px;
-    }
-
-    .newsletter {
-        border: 0;
-    }
-
-    .contact__grid {
-        width: 250px;
-    }
 }
