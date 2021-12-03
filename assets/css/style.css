@@ -348,7 +348,16 @@ h3 {
   margin-right: 40px;
 }
 
-.bouton-details {
+.button_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   right: 10px;
   bottom: 10px;
@@ -360,7 +369,7 @@ h3 {
   width: 120px;
 }
 
-.bouton-details:hover {
+.button_details:hover {
   background-color: #00258C;
   color: white;
 }
@@ -547,7 +556,7 @@ footer {
   padding: 10px;
 }
 
-.button {
+.newsletter__button {
   border: none;
   color: white;
   padding: 8px 20px;
@@ -556,24 +565,17 @@ footer {
   display: inline-block;
   text-decoration: none;
   margin: 4px 2px;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
   cursor: pointer;
   color: black;
   font-family: "Open Sans";
-}
-
-.button:hover {
-  background-color: #4D4123;
-  color: white;
-}
-
-.button2 {
   font-size: 11px;
   padding: 4px 10px;
 }
 
-.button2:hover {
+.newsletter__button:hover {
+  color: white;
   background-color: black;
 }
 
@@ -999,7 +1001,7 @@ footer {
     min-width: 400px;
     width: auto;
   }
-  .bouton-details {
+  .button_details {
     position: relative;
     margin-top: 30px;
     margin-left: 20px;
