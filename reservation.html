@@ -44,7 +44,18 @@
                 <figure>
                         <img src="./assets/img/banner/banner1.webp" alt="" class="banner-reservation">
                 </figure>
-                <form id="resa" action="confirmation.html" method="get">
+                <div class="confirmation_text" id="confirmation_text">
+                        <h2>Votre réservation est confirmée !</h2>
+                        <p>Nous sommes impatients de vous recevoir !</p>
+                        <p>Nous allons étudier avec le plus grand soin votre réservation afin de vous offrir le
+                                meilleur séjour possible.</p>
+                        <p>Nous restons à votre disposition en cas de besoin et pour toute demande
+                                supplémentaire.</p>
+                        <p>Dans l'attente de vous recevoir, recevez nos plus chaleureuses salutations !</p>
+                        <br />
+                        <p>L'équipe de l'hôtel Parimis</p>
+                </div>
+                <form id="resa" class="resa" action="confirmation.html" method="get">
                         <h2>Formulaire de réservation</h2>
                         <p>Vos coordonnées</p>
                         <div class="form__contact-group"><label for="name">Prénom &nbsp;</label>
@@ -423,6 +434,7 @@
                                         placeholder="Code de validation" minlength="3" maxlength="3" required>
                         </div>
                         <div class="form__contact-button">
+                                <input class="btn btn-submit button" type="submit" value="Envoyer sans controle" id="button_nocontrol">
                                 <input class="btn btn-submit button" type="submit" value="Réserver">
                                 <input class="btn btn-reset button" type="reset" value="Effacer">
                         </div>
@@ -475,7 +487,17 @@
                 </div>
                 <div class="footer__copyright">&#169; copyright 2021-2022</div>
         </footer>
+
+        <!-- go to top -->
         <div class="go_to_top" id="go_to_top"><img src="./assets/img/gotop.svg" class="gotop-icon" alt="gotop">GO TOP
+        </div>
+
+        <!-- un popup pour confirmer l'inscription à la newsletter -->
+        <div class="background_overlay" id="background_overlay"></div>
+        <div class="popup" id="popup">
+                <p class="popup_text" id="confirmation_newsletter_text">Votre inscription a bien été prise en compte.
+                </p>
+                <img src="./assets/img/logo/logo2.webp" alt="">
         </div>
         <script src="./assets/js/scripts.js"></script>
 </body>

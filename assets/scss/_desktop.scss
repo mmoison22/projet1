@@ -74,7 +74,7 @@
 
 // mika
 @media screen and (min-width: 780px) {
-    #resa {
+    .resa {
         margin: 1em 10em 1em 10em;
         padding: 2em;
         border: 0.2em solid $primary_color;
@@ -132,11 +132,11 @@
     }
 
 
-    #confirmation {
+    .confirmation_text {
         background-color: #ddae36;
         color: $white;
-        margin: 5rem 20rem;
-        padding: 1rem;
+        // margin: 5rem 20rem;
+        // padding: 1rem;
         display: block;
         text-align: center;
         h2 {

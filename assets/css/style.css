@@ -33,6 +33,11 @@
   src: url(../fonts/OpenSans-Regular.ttf);
 }
 
+@font-face {
+  font-family: "Parisienne";
+  src: url(../fonts/Parisienne-Regular.ttf);
+}
+
 .center-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,10 +93,6 @@ header {
       grid-template-columns: 40px auto 20%;
   height: 50px;
   gap: 5px;
-}
-
-hr {
-  margin: 0;
 }
 
 .go_to_top {
@@ -197,7 +198,8 @@ hr {
 }
 
 h1 {
-  color: goldenrod;
+  color: #daa520;
+  font-family: "Source Serif Pro";
   font-size: 2.5rem;
   display: none;
 }
@@ -913,13 +915,14 @@ footer {
           justify-content: center;
 }
 
-#resa {
+.resa {
+  overflow: hidden;
   padding: 0.5em;
   border-top: 0.2em solid #daa520;
   margin-top: 1em;
 }
 
-#resa p {
+.resa p {
   font-size: 1.5rem;
   color: #daa520;
   font-weight: bold;
@@ -928,7 +931,7 @@ footer {
   margin-top: 2rem;
 }
 
-#resa h2 {
+.resa h2 {
   color: #daa520;
   text-align: center;
 }
@@ -944,23 +947,25 @@ footer {
           flex-direction: row;
 }
 
-#confirmation {
-  background-color: #ddae36;
+.confirmation_text {
+  background-color: #daa520;
   color: white;
-  margin: 1.5rem;
-  padding: 1rem;
   display: block;
   text-align: center;
+  overflow: hidden;
+  height: 0;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
-#confirmation h2 {
+.confirmation_text h2 {
   margin: 2rem auto;
   color: white;
   font-size: 1.7rem;
   font-family: "EB Garamond";
 }
 
-#confirmation p {
+.confirmation_text p {
   font-size: 1.4rem;
   font-family: "Cormorant Garamond";
 }
@@ -1118,7 +1123,7 @@ footer {
 }
 
 @media screen and (min-width: 480px) and (max-width: 779px) {
-  #resa {
+  .resa {
     margin: 2em;
     padding: 1em;
     border: 0.2em solid #daa520;
@@ -1148,20 +1153,18 @@ footer {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  #confirmation {
+  .confirmation_text {
     background-color: #DDAE36;
     color: white;
-    margin: 2rem 10rem;
-    padding: 1rem;
     display: block;
     text-align: center;
   }
-  #confirmation h2 {
+  .confirmation_text h2 {
     margin: 2rem auto;
     font-size: 1.7rem;
     font-family: "EB Garamond";
   }
-  #confirmation p {
+  .confirmation_text p {
     font-size: 1.2rem;
     font-family: "Cormorant Garamond";
   }
@@ -1250,7 +1253,7 @@ footer {
 }
 
 @media screen and (min-width: 780px) {
-  #resa {
+  .resa {
     margin: 1em 10em 1em 10em;
     padding: 2em;
     border: 0.2em solid #daa520;
@@ -1323,20 +1326,18 @@ footer {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  #confirmation {
+  .confirmation_text {
     background-color: #ddae36;
     color: white;
-    margin: 5rem 20rem;
-    padding: 1rem;
     display: block;
     text-align: center;
   }
-  #confirmation h2 {
+  .confirmation_text h2 {
     margin: 2rem auto;
     font-size: 1.7rem;
     font-family: "EB Garamond";
   }
-  #confirmation p {
+  .confirmation_text p {
     font-size: 1.2rem;
     font-family: "Cormorant Garamond";
   }
@@ -1377,6 +1378,30 @@ footer {
   .footer__media,
   .footer__newsletter {
     border-right: 1px solid white;
+  }
+}
+
+.toggle_reservation_form {
+  display: none;
+}
+
+.toggle_reservation_text {
+  margin: 1.5rem;
+  padding: 1rem;
+  height: 500px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 779px) {
+  .toggle_reservation_text {
+    margin: 2rem 10rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .toggle_reservation_text {
+    margin: 5rem 20rem;
+    padding: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

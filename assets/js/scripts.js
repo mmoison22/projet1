@@ -30,12 +30,26 @@ function showGoToTopIcon() {
 }
 
 /**
- * Form Contact & Newsletter
+ * Form Contact & Newsletter & Reservation
  */
-document.getElementById("form_contact").addEventListener("submit", showConfirmation);
-document.getElementById("form_newsletter").addEventListener("submit", showConfirmation);
+const _form_contact = document.getElementById("form_contact");
+const _form_reservation = document.getElementById("resa");
 
-function showConfirmation(e) {
+if(_form_contact) { _form_contact.addEventListener("submit", showConfirmationNewsletter); }
+if(_form_reservation) { _form_reservation.addEventListener("submit", showConfirmationBooking) }
+document.getElementById("form_newsletter").addEventListener("submit", showConfirmationNewsletter);
+
+// pour tester
+const _button_reservation = document.getElementById("button_nocontrol");
+if (_button_reservation) { _button_reservation.addEventListener("click", showConfirmationBooking)}
+
+function showConfirmationBooking(e) {
+    e.preventDefault();
+    _form_reservation.classList.toggle("toggle_reservation_form");
+    document.getElementById("confirmation_text").classList.toggle("toggle_reservation_text");
+}
+
+function showConfirmationNewsletter(e) {
 	e.preventDefault();
     
     let _idText = e.target.id == "form_contact" ? "confirmation_message_text" : "confirmation_newsletter_text";

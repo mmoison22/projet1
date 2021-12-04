@@ -43,7 +43,7 @@
 
 //Mika
 @media screen and (min-width:480px) and(max-width:779px) {
-    #resa {
+    .resa {
         margin:2em;
         padding: 1em;
         border: 0.2em solid $primary_color;
@@ -62,11 +62,9 @@
             flex-direction: row;
         }
     }
-    #confirmation {
+    .confirmation_text {
         background-color: #DDAE36;
         color: $white;
-        margin: 2rem 10rem;
-        padding: 1rem;
         display: block;
         text-align: center;
         h2 {

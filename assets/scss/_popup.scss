@@ -1,0 +1,25 @@
+// reservation : cache le formulaire
+.toggle_reservation_form {
+    display: none;
+}
+
+// reservation : popup de confirmation
+.toggle_reservation_text {
+    margin: 1.5rem;
+    padding: 1rem;
+    height: 500px;
+}
+
+@media screen and (min-width: 480px) and(max-width:779px) {
+    .toggle_reservation_text {
+        margin: 2rem 10rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .toggle_reservation_text {
+        margin: 5rem 20rem;
+        padding: 1rem;
+    }
+}
