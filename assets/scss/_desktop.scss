@@ -99,6 +99,27 @@
             }
         }
     }
+
+    .selection_room_container {
+        display: grid;
+        // grid-template-columns: 1fr 1fr;
+        justify-content: stretch;
+        align-items: center;
+        grid-area: 
+        "a"
+        "b"
+        "c" 
+        "d";
+        gap: 20px;
+        margin-bottom: 10px;
+
+        .room_selection {
+            .room-selection-label {
+                text-align: left;
+            }
+        }
+    }
+
     .room_selection {
         display: flex;
         flex-direction: column;
@@ -108,9 +129,8 @@
             flex-direction: row;
         }
     }
-    #test {
-        justify-content: space-evenly;
-    }
+
+
     #confirmation {
         background-color: #ddae36;
         color: $white;
@@ -128,6 +148,65 @@
             font-family: "Cormorant Garamond";
         }
     }
+}
+
+// reservation: selection du nombre de chambre
+@media screen and (min-width: 1000px) {
+    .selection_room_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: stretch;
+        grid-area: 
+        "a b"
+        "c d";
+        gap: 20px;
+
+        .room_selection {
+            .room-selection-label {
+                text-align: left;
+            }
+        }
+    }
+    
+}
+
+// reservation: selection du nombre de chambre
+@media screen and (min-width: 1200px) {
+    .selection_room_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: stretch;
+        grid-area: 
+        "a b c"
+        "d d d";
+        gap: 20px;
+
+        .room_selection {
+            .room-selection-label {
+                text-align: left;
+            }
+        }
+    }
+    
+}
+
+// reservation: selection du nombre de chambre
+@media screen and (min-width: 1500px) {
+    .selection_room_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: stretch;
+        grid-area: 
+        "a b c d";
+        gap: 20px;
+
+        .room_selection {
+            .room-selection-label {
+                text-align: left;
+            }
+        }
+    }
+    
 }
 
 // Footer
