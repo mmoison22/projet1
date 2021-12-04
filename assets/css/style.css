@@ -90,6 +90,10 @@ header {
   gap: 5px;
 }
 
+hr {
+  margin: 0;
+}
+
 .go_to_top {
   display: none;
   position: fixed;
@@ -221,6 +225,7 @@ ul {
   line-height: 1.5;
   font-size: 13px;
   font-family: "Open Sans";
+  overflow: hidden;
 }
 
 .nav-menu a {
@@ -333,7 +338,7 @@ h3 {
           transition-duration: 1s;
 }
 
-.room_card:nth-child(-n+4) {
+.room_card:nth-child(-n + 4) {
   margin-bottom: 20px;
 }
 
@@ -911,7 +916,7 @@ footer {
 #resa {
   padding: 0.5em;
   border-top: 0.2em solid #daa520;
-  border-bottom: 0.2em solid #daa520;
+  margin-top: 1em;
 }
 
 #resa p {
@@ -940,7 +945,7 @@ footer {
 }
 
 #confirmation {
-  background-color: #DDAE36;
+  background-color: #ddae36;
   color: white;
   margin: 1.5rem;
   padding: 1rem;
@@ -1067,6 +1072,11 @@ footer {
 .popup__zoom-img {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.banner-reservation {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }
 
 @media screen and (min-width: 500px) {
@@ -1241,7 +1251,7 @@ footer {
 
 @media screen and (min-width: 780px) {
   #resa {
-    margin: 10em;
+    margin: 1em 10em 1em 10em;
     padding: 2em;
     border: 0.2em solid #daa520;
   }
