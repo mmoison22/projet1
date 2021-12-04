@@ -208,11 +208,18 @@ h3 {
         margin-bottom: 20px;
     }
 
-    img {
-        object-fit: cover;
+    .room_card-photo-container {
+        flex: 1;
+
+        img {
+            object-fit: cover;
+            height: 100%;
+        }
     }
 
-    div {
+    .room_card-text-container {
+        flex: 1;
+
         h3 {
             padding-left: 20px;
         }
@@ -664,4 +671,48 @@ footer {
         background-color: $white;
         color: $secondary_color;
     }
+}
+
+/**
+    Popup pour photos
+    ordre de la structure html: overlay -> container -> img
+*/
+.popup__overlay {
+    display: none;
+    position: fixed;
+    z-index: 3; // pour etre au dessus du bouton reserver
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+.popup__container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    width: 90%;
+}
+
+.popup__img {
+    display: none;
+    transition-duration: 0.7s;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: 5px $primary_color solid;
+    cursor: pointer;
+    transform: scale(0.1);
+}
+
+.popup__show {
+    display: block;
+}
+
+.popup__zoom-img{
+    transform: scale(1.0);
 }

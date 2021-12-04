@@ -12,18 +12,6 @@
 
 }
 
-// Media query for title and footer
-//old
-@media screen and (max-width: 700px) {
-    // .title__text {
-    //     display: none;
-    // }
-
-    .footer-smallcontainer {
-        flex-wrap: wrap;
-    }
-}
-
 // Media Query for Header
 @media screen and (min-width: 500px) {
     header {
