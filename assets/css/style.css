@@ -950,12 +950,13 @@ footer {
 .confirmation_text {
   background-color: #daa520;
   color: white;
-  display: block;
   text-align: center;
   overflow: hidden;
   height: 0;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .confirmation_text h2 {
@@ -1329,7 +1330,6 @@ footer {
   .confirmation_text {
     background-color: #ddae36;
     color: white;
-    display: block;
     text-align: center;
   }
   .confirmation_text h2 {
@@ -1389,6 +1389,8 @@ footer {
   margin: 1.5rem;
   padding: 1rem;
   height: 500px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 @media screen and (min-width: 480px) and (max-width: 779px) {
