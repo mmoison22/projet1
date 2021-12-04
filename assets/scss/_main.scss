@@ -599,6 +599,8 @@ footer {
     }
 }
 .confirmation_text {
+    @include myflex2;
+
     background-color: $primary_color;
     color: $white;
     text-align: center;
