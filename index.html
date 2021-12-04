@@ -42,7 +42,7 @@
         <figure>
             <picture>
                 <source media="(max-width: 501px)" srcset="./assets/img/palace/hotel-parimis-small.webp">
-                <img src="./assets/img/palace/hotel-parimis.webp" width="100%" alt="Hôtel Parimis">
+                <img src="./assets/img/palace/hotel-parimis.webp" alt="Hôtel Parimis">
             </picture>
         </figure>
         <section>
@@ -112,12 +112,12 @@
 
                 <div class="contact__grid">
                     <label for="contact_name" class="contact__label_name">Nom Prénom</label>
-                    <input type="text" class="contact__input_name" minlength="3"
+                    <input type="text" id="contact_name" class="contact__input_name" minlength="3"
                         pattern="[ \u00BF-\u1FFF\u2C00-\uD7FF\w]+" required>
                     <label for="contact_email" class="contact__label_email">Email</label>
-                    <input type="email" class="contact__input_email"
+                    <input type="email" id="contact_email" class="contact__input_email"
                         pattern="[a-zA-Z0-9/\-//\./]+@[a-zA-Z0-9/\-/]+.[a-zA-Z]{2,3}" required>
-                    <textarea name="" id="" cols="50" rows="5" placeholder="Tapez votre message ici"
+                    <textarea name="contact_message" id="contact_message" cols="50" rows="5" placeholder="Tapez votre message ici"
                         class="contact__message" required></textarea>
                 </div>
                 <div class="contact_buttons">
@@ -154,10 +154,10 @@
         <form action="#" method="post" class="footer__newsletter" id="form_newsletter">
             <div class="center-vertical">
                 <img src="./assets/img/envelope.svg" alt="newsletter" class="footer__icon">
-                <label for="" class="newsletter__text">Inscrivez-vous à la newsletter :</label>
+                <label for="newsletter_email" class="newsletter__text">Inscrivez-vous à la newsletter :</label>
             </div>
             <div>
-                <input type="text" name="" id="" placeholder="Votre email"
+                <input type="text" id="newsletter_email" name="email" placeholder="Votre email"
                     pattern="[a-zA-Z0-9/\-//\./]+@[a-zA-Z0-9/\-/]+.[a-zA-Z]{2,3}" required>
                 <button type="submit" class="newsletter__button">OK</button>
             </div>
@@ -180,7 +180,7 @@
     <!-- un popup pour les photos en haute qualité -->
     <div class="popup__overlay" id="popup__overlay">
         <div class="popup__container" id="popup__container">
-            <img src="" alt="" class="popup__img" id="popup__img">
+            <img src="." alt="chambre" class="popup__img" id="popup__img">
         </div>
     </div>
 
