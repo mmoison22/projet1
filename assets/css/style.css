@@ -581,6 +581,12 @@ footer {
     background-color: white;
     color: #00258C; }
 
+#headline {
+  display: block;
+  color: #daa520;
+  text-align: center;
+  padding-bottom: 0; }
+
 @media screen and (max-width: 900px) {
   .room_card {
     flex-direction: column; }
@@ -715,36 +721,45 @@ footer {
       font-family: "Cormorant Garamond"; }
 
   article {
-    margin: 10rem;
-    border-bottom: 1px solid #daa520;
-    box-shadow: #daa520; }
-    article h3 {
-      color: #00258C;
-      text-align: center; }
-    article li {
-      list-style: none;
-      text-align: center; }
-    article .superficie {
-      text-align: center;
-      margin-top: 1.5rem; }
-    article h4 {
-      text-align: center;
-      color: #daa520;
-      font-family: "Source Serif Pro";
-      font-size: 25px;
-      margin-top: 0;
-      margin-bottom: 1rem; }
-      article h4 span {
-        font-size: 20px; }
-    article p {
-      margin: 1rem 1rem;
-      text-align: justify; }
-      article p span {
-        font-size: 1.3rem; }
+    margin: 5rem 10rem; }
+    article .carte-room {
+      box-shadow: 5px 5px 5px #c4c2c2; }
+      article .carte-room img {
+        max-height: 75vh;
+        object-fit: cover; }
+      article .carte-room-bottom {
+        display: flex;
+        background-color: #FBFBF0; }
+        article .carte-room-bottom .caract {
+          flex: 1; }
+        article .carte-room-bottom .room-price {
+          align-items: center;
+          flex: 1;
+          flex-direction: column; }
+          article .carte-room-bottom .room-price-infos {
+            flex: 1;
+            display: flex;
+            flex-direction: row; }
+            article .carte-room-bottom .room-price-infos .sup {
+              flex: 1; }
+            article .carte-room-bottom .room-price-infos .price {
+              margin-top: 1.2rem;
+              margin-bottom: 0.3rem;
+              flex: 1; }
+          article .carte-room-bottom .room-price-btn {
+            flex: 1; }
+            article .carte-room-bottom .room-price-btn a {
+              font-size: 5rem; }
     article .btn {
       display: flex;
       justify-content: center;
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem;
+      height: 2rem; }
+
+  .reserver2 {
+    height: 2.5rem;
+    width: 10rem;
+    font-size: 1rem; } }
 @media screen and (max-width: 501px) {
   main section {
     margin: 0; }
