@@ -191,10 +191,35 @@ body {
       margin-left: 10px;
       margin-right: 10px; }
 
-h3 {
-  color: #daa520;
-  font-family: "Source Serif Pro";
-  font-size: 25px; }
+article {
+  margin: 0.2rem; }
+  article h3 {
+    color: #00258C;
+    text-align: center; }
+  article li {
+    list-style: none;
+    text-align: center; }
+  article .superficie {
+    text-align: center;
+    margin-top: 1.5rem; }
+  article h4 {
+    text-align: center;
+    color: #daa520;
+    font-family: "Source Serif Pro";
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 1rem; }
+    article h4 span {
+      font-size: 20px; }
+  article p {
+    margin: 1rem 1rem;
+    text-align: justify; }
+    article p span {
+      font-size: 1.3rem; }
+  article .btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem; }
 
 .room_card {
   display: flex;
@@ -687,7 +712,39 @@ footer {
       font-family: "EB Garamond"; }
     #confirmation p {
       font-size: 1.2rem;
-      font-family: "Cormorant Garamond"; } }
+      font-family: "Cormorant Garamond"; }
+
+  article {
+    margin: 10rem;
+    border-bottom: 1px solid #daa520;
+    box-shadow: #daa520; }
+    article h3 {
+      color: #00258C;
+      text-align: center; }
+    article li {
+      list-style: none;
+      text-align: center; }
+    article .superficie {
+      text-align: center;
+      margin-top: 1.5rem; }
+    article h4 {
+      text-align: center;
+      color: #daa520;
+      font-family: "Source Serif Pro";
+      font-size: 25px;
+      margin-top: 0;
+      margin-bottom: 1rem; }
+      article h4 span {
+        font-size: 20px; }
+    article p {
+      margin: 1rem 1rem;
+      text-align: justify; }
+      article p span {
+        font-size: 1.3rem; }
+    article .btn {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem; } }
 @media screen and (max-width: 501px) {
   main section {
     margin: 0; }
