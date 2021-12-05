@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.room {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 100px;
+}
+
+.container {
+    border: 1px solid black;
+    position: relative;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "a b"
+        "c d";
+
+    height: 500px;
+    width: 800px;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:nth-child(1) {
+            grid-area: a;
+        }
+
+        &:nth-child(2) {
+            grid-area: b;
+        }
+
+        &:nth-child(3) {
+            grid-area: d;
+        }
+
+        &:nth-child(4) {
+            grid-area: c;
+        }
+    }
+}
+
+.subcontainer_photo {
+    // background-color: rgba($color: #000000, $alpha: 0.9);
+}
+
+.subcontainer_desc {
+    background-color: rgba($color: goldenrod, $alpha: 0.07);
+    padding: 20px;
+}
+
+.book {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 15px 50px;
+}
+
+.photo {
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.9;
+    &:hover {
+        transition-duration: 0.5s;
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    h2 {
+        margin: 5px 0;
+        span {
+            font-weight: lighter;
+        }
+    }
+}
+
+.top_line {
+    border-top: 1px solid silver;
+    width: 66%;
+}
+
+.bottom_line {
+    border-bottom: 1px solid silver;
+    width: 33%;
+    margin-bottom: 20px;
+}
+
+.room {
+    &:nth-child(odd) {
+        .title {
+            align-items: flex-end;
+        }
+
+        .container {
+            .subcontainer_button {
+                grid-area: a;
+            }
+
+            .subcontainer_photo {
+                grid-area: b;
+            }
+
+            .subcontainer_price {
+                grid-area: d;
+            }
+
+            .subcontainer_desc {
+                grid-area: c;
+            }
+        }
+
+        .photo {
+            transition-duration: 0s;
+        }
+    }
+}
