@@ -11,7 +11,26 @@
 </head>
 
 <body>
-
+    <header>
+        <div class="header__left">
+            <img src="./assets/img/menu.svg" alt="" class="header__menu-icon" id="menu-open">
+            <img src="./assets/img/close.svg" alt="" class="header__close-icon" id="menu-close">
+            <nav class="header__breadcrumb">
+                <ul>
+                    <li><a href="./index.html"><img src="./assets/img/house.svg" alt="Home" class="breadcrumb-icon"></a>
+                    </li>
+                    <li>></li>
+                    <li>réservation</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__mid">
+            <a href="./index.html">
+                <img src="./assets/img/logo/logo2.webp" alt="" class="header__logo">
+                <h1>Hôtel Parimis</h1>
+            </a>
+        </div>
+    </header>
     <main>
         <h1 id="headline">Nos chambres et suites</h1>
         <article>
@@ -21,7 +40,7 @@
             <div class="border_bottom"></div>
             <div class="carte-room">
 
-                <img src="assets/img/chambres/1.jpg" alt="Chambre Supérieure">
+                <img src="assets/img/chambres/chambre-superieure.webp" alt="Chambre Supérieure">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis exercitationem facere aspernatur
                     illum
                     impedit blanditiis inventore autem, ex culpa deserunt porro sint vero totam ea nemo, dolorum veniam
@@ -61,7 +80,7 @@
             <div class="border_bottom"></div>
             <div class="carte-room">
 
-                <img src="assets/img/chambres/2.jpg" alt="Chambre Supérieure">
+                <img src="assets/img/chambres/chambre-grandluxe.webp" alt="Chambre Luxe">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis exercitationem facere aspernatur
                     illum
                     impedit blanditiis inventore autem, ex culpa deserunt porro sint vero totam ea nemo, dolorum veniam
@@ -100,7 +119,7 @@
             <div class="border_bottom"></div>
             <div class="carte-room">
 
-                <img src="assets/img/chambres/3.jpg" alt="Chambre Supérieure">
+                <img src="assets/img/chambres/suite-prestige.webp" alt="Suite Prestige">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis exercitationem facere aspernatur
                     illum
                     impedit blanditiis inventore autem, ex culpa deserunt porro sint vero totam ea nemo, dolorum veniam
@@ -140,7 +159,7 @@
             <div class="border_bottom"></div>
             <div class="carte-room">
 
-                <img src="assets/img/chambres/4.jpg" alt="Chambre Supérieure">
+                <img src="assets/img/chambres/suite-excellence.webp" alt="Suite Excellence">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis exercitationem facere aspernatur
                     illum
                     impedit blanditiis inventore autem, ex culpa deserunt porro sint vero totam ea nemo, dolorum veniam
@@ -172,7 +191,65 @@
             </div>
         </article>
     </main>
+    <footer>
+        <div class="footer__media">
+            <p>Rejoignez-nous sur :</p>
+            <div class="footer__social-items">
+                <a href="#" title="Instagram" class="footer__social-link">
+                    <img src="./assets/img/brands/instagram.svg" alt="Instagram">
+                </a>
+                <a href="#" title="Facebook" class="footer__social-link">
+                    <img src="./assets/img/brands/facebook.svg" alt="Facebook">
+                </a>
+                <a href="#" title="Twitter" class="footer__social-link">
+                    <img src="./assets/img/brands/twitter.svg" alt="Twitter">
+                </a>
+                <a href="#" title="Youtube" class="footer__social-link">
+                    <img src="./assets/img/brands/youtube.svg" alt="Youtube">
+                </a>
+                <a href="#" title="Pinterest" class="footer__social-link">
+                    <img src="./assets/img/brands/pinterest.svg" alt="Pinterest">
+                </a>
+            </div>
+        </div>
+        <form action="#" method="post" class="footer__newsletter" id="form_newsletter">
+            <div class="center-vertical">
+                <img src="./assets/img/envelope.svg" alt="newsletter" class="footer__icon">
+                <label for="" class="newsletter__text">Inscrivez-vous à la newsletter :</label>
+            </div>
+            <div>
+                <input type="text" name="" id="" placeholder="Votre email"
+                    pattern="[a-zA-Z0-9/\-//\./]+@[a-zA-Z0-9/\-/]+.[a-zA-Z]{2,3}" required>
+                <button type="submit" class="newsletter__button">OK</button>
+            </div>
+        </form>
+        <div class="footer__address">
+            <img src="./assets/img/map.svg" alt="Adress" class="footer__icon">
+            <div class="footer__address_text">
+                <address>Hôtel Parimis</address>
+                <address>1 rue du grand palais</address>
+                <address>75001, Paris</address>
+            </div>
+            <img src="./assets/img/phone.svg" alt="Phone Number" class="footer__icon">
+            <a href="tel:#" class="footer__phone">
+                <p>+33 (0)1 02 03 04 05 </p>
+            </a>
+        </div>
+        <div class="footer__copyright">&#169; copyright 2021-2022</div>
+    </footer>
 
+    <!-- go to top -->
+    <div class="go_to_top" id="go_to_top"><img src="./assets/img/gotop.svg" class="gotop-icon" alt="gotop">GO TOP
+    </div>
+
+    <!-- un popup pour confirmer l'inscription à la newsletter -->
+    <div class="background_overlay" id="background_overlay"></div>
+    <div class="popup" id="popup">
+        <p class="popup_text" id="confirmation_newsletter_text">Votre inscription a bien été prise en compte.
+        </p>
+        <img src="./assets/img/logo/logo2.webp" alt="">
+    </div>
+    <script src="./assets/js/scripts.js"></script>
 
 </body>
 

@@ -245,7 +245,6 @@
             display: flex;
             justify-content: center;
             margin-bottom: 1rem;
-            //border:1px solid black;
             height: 2rem;
         }
     }
@@ -254,4 +253,7 @@
         width: 10rem;
         font-size: 1rem;
     }
+    #headline {
+        margin-bottom:-3rem;
+    } 
 }
