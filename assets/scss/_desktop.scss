@@ -199,4 +199,59 @@
     .footer__address {
         border-bottom: none;
     }
+
+
+    article {
+        margin: 5rem 10rem;
+        .carte-room {
+            box-shadow: 5px 5px 5px rgb(196, 194, 194);
+            img {
+                max-height: 75vh;
+                object-fit: cover;
+            }
+            &-bottom {
+                display: flex;
+                background-color: #FBFBF0;
+                .caract {
+                    flex:1;
+                }
+                .room-price {
+                    align-items: center;
+                    flex:1;
+                    flex-direction: column;
+                    &-infos {
+                        flex:1;
+                        display: flex;
+                        flex-direction: row;
+                        .sup {
+                            flex:1;
+                        }
+                        .price {
+                            margin-top: 1.2rem;
+                            margin-bottom: 0.3rem;
+                            flex:1;
+                        }
+                    }
+                    &-btn {
+                        flex:1;
+                        a {
+                            font-size: 5rem;
+                        }
+                    }
+                }
+            }
+        }
+        .btn {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1rem;
+            //border:1px solid black;
+            height: 2rem;
+        }
+    }
+    .reserver2 {
+        height: 2.5rem;
+        width: 10rem;
+        font-size: 1rem;
+    }
 }

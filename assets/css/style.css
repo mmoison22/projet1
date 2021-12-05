@@ -320,11 +320,43 @@ section {
   padding: 10px;
 }
 
+<<<<<<< HEAD
 h3 {
   color: #daa520;
   font-family: "Source Serif Pro";
   font-size: 25px;
 }
+=======
+article {
+  margin: 0.2rem; }
+  article h3 {
+    color: #00258C;
+    text-align: center; }
+  article li {
+    list-style: none;
+    text-align: center; }
+  article .superficie {
+    text-align: center;
+    margin-top: 1.5rem; }
+  article h4 {
+    text-align: center;
+    color: #daa520;
+    font-family: "Source Serif Pro";
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 1rem; }
+    article h4 span {
+      font-size: 20px; }
+  article p {
+    margin: 1rem 1rem;
+    text-align: justify; }
+    article p span {
+      font-size: 1.3rem; }
+  article .btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem; }
+>>>>>>> mika2
 
 .room_card {
   display: -webkit-box;
@@ -1101,6 +1133,29 @@ footer {
           filter: grayscale(1);
 }
 
+<<<<<<< HEAD
+=======
+#headline {
+  display: block;
+  color: #daa520;
+  text-align: center;
+  padding-bottom: 0; }
+
+@media screen and (max-width: 900px) {
+  .room_card {
+    flex-direction: column; }
+    .room_card img, .room_card div {
+      min-width: 400px;
+      width: auto; }
+
+  .bouton-details {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 20px; } }
+@media screen and (max-width: 700px) {
+  .footer-smallcontainer {
+    flex-wrap: wrap; } }
+>>>>>>> mika2
 @media screen and (min-width: 500px) {
   section {
     padding-left: 20px;
@@ -1425,8 +1480,73 @@ footer {
   .toggle_reservation_text {
     margin: 2rem 2rem;
     padding: 1rem;
+<<<<<<< HEAD
   }
 }
+=======
+    display: block;
+    text-align: center; }
+    #confirmation h2 {
+      margin: 2rem auto;
+      font-size: 1.7rem;
+      font-family: "EB Garamond"; }
+    #confirmation p {
+      font-size: 1.2rem;
+      font-family: "Cormorant Garamond"; }
+
+  article {
+    margin: 5rem 10rem; }
+    article .carte-room {
+      box-shadow: 5px 5px 5px #c4c2c2; }
+      article .carte-room img {
+        max-height: 75vh;
+        object-fit: cover; }
+      article .carte-room-bottom {
+        display: flex;
+        background-color: #FBFBF0; }
+        article .carte-room-bottom .caract {
+          flex: 1; }
+        article .carte-room-bottom .room-price {
+          align-items: center;
+          flex: 1;
+          flex-direction: column; }
+          article .carte-room-bottom .room-price-infos {
+            flex: 1;
+            display: flex;
+            flex-direction: row; }
+            article .carte-room-bottom .room-price-infos .sup {
+              flex: 1; }
+            article .carte-room-bottom .room-price-infos .price {
+              margin-top: 1.2rem;
+              margin-bottom: 0.3rem;
+              flex: 1; }
+          article .carte-room-bottom .room-price-btn {
+            flex: 1; }
+            article .carte-room-bottom .room-price-btn a {
+              font-size: 5rem; }
+    article .btn {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+      height: 2rem; }
+
+  .reserver2 {
+    height: 2.5rem;
+    width: 10rem;
+    font-size: 1rem; } }
+@media screen and (max-width: 501px) {
+  main section {
+    margin: 0; }
+    main section h2, main section h3 {
+      margin-left: 10px; }
+    main section p {
+      margin-left: 20px;
+      margin-bottom: 20px; }
+
+  .bouton-details {
+    height: 30px;
+    margin-left: 30px; }
+>>>>>>> mika2
 
 @media screen and (min-width: 780px) {
   .toggle_reservation_text {

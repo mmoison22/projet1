@@ -192,11 +192,45 @@ section {
     padding: 10px;
     // gap: 20px;
 }
-
-h3 {
-    color: $primary_color;
-    font-family: "Source Serif Pro";
-    font-size: 25px;
+article {
+    margin: 0.2rem;;
+    h3 {
+        color: $secondary_color;
+        text-align: center;
+    }
+    li {
+        list-style: none;
+        text-align: center;
+    }
+    .superficie {
+        text-align: center;
+        margin-top: 1.5rem;
+        //background-color: red;
+    }
+    h4 {
+        //background-color: blue;
+        text-align: center;
+        color: $primary_color;
+        font-family: "Source Serif Pro";
+        font-size: 25px;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        span {
+            font-size: 20px;
+        }
+    }
+    p {
+        margin: 1rem 1rem;
+        text-align: justify;
+        span {
+            font-size: 1.3rem;
+        }
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
 }
 
 .room_card {
@@ -719,3 +753,9 @@ footer {
     filter: grayscale(1);
 }
 
+#headline {
+    display: block;
+    color:$primary_color;
+    text-align: center;
+    padding-bottom: 0;
+}
