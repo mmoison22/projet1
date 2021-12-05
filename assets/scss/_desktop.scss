@@ -193,6 +193,10 @@
 
     .footer__media,
     .footer__newsletter {
-        border-right: 1px solid $footer_color;
+        border-right: 1px solid rgba($color: $footer_color, $alpha: 0.5);
+    }
+
+    .footer__address {
+        border-bottom: none;
     }
 }

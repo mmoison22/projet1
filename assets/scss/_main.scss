@@ -326,6 +326,8 @@ footer {
 .footer__newsletter {
     grid-area: footer__newsletter;
     @include myflex-footer;
+    border-top: 1px solid rgba($color: $footer_separator_color, $alpha: 0.4);
+    border-bottom: 1px solid rgba($color: $footer_separator_color, $alpha: 0.4);
 }
 
 .footer__address {
@@ -338,7 +340,8 @@ footer {
     grid-template-columns: 25px auto;
     justify-content: center;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba($color: $footer_separator_color, $alpha: 0.4);
 }
 
 .footer__copyright {
@@ -465,17 +468,6 @@ footer {
     @include svgToWhite;
 }
 
-// old
-// .footer__address_grid {
-//     display: grid;
-//     grid-template-areas:
-//         "a b"
-//         "c d";
-//     align-items: center;
-//     grid-template-columns: 25px auto;
-//     justify-content: center;
-// }
-
 .footer_map_icon {
     grid-area: a;
 }
@@ -495,11 +487,6 @@ footer {
     grid-area: d;
     color: $white;
 }
-
-// old
-// .footer__copyright {
-//     margin: 10px;
-// }
 
 .background_overlay {
     display: none;

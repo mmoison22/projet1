@@ -515,6 +515,8 @@ footer {
           align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
+  border-top: 1px solid rgba(192, 192, 192, 0.4);
+  border-bottom: 1px solid rgba(192, 192, 192, 0.4);
 }
 
 .footer__address {
@@ -533,7 +535,8 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.4);
 }
 
 .footer__copyright {
@@ -1190,7 +1193,7 @@ footer {
     padding-top: 20px;
   }
   .footer__media {
-    border-right: 1px solid white;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
   }
   .footer__newsletter {
     border-bottom: none;
@@ -1399,7 +1402,10 @@ footer {
   }
   .footer__media,
   .footer__newsletter {
-    border-right: 1px solid white;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .footer__address {
+    border-bottom: none;
   }
 }
 
