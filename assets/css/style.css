@@ -1095,6 +1095,7 @@ footer {
 .reserver2:hover {
   background-color: white;
   color: #00258C;
+  cursor: pointer;
 }
 
 /**
