@@ -172,8 +172,13 @@ figure {
 
 h2 {
     font-family: "Source Serif Pro";
-    font-size: 30px;
+    font-size: 22px;
     color: $secondary_color;
+}
+
+h3 {
+    color: $primary_color;
+    font-size: 20px;
 }
 
 body {
@@ -755,7 +760,11 @@ footer {
 
 #headline {
     display: block;
-    color:$primary_color;
+    color:$white;
+    background-color: $background2;
+    padding: 15px;
     text-align: center;
-    padding-bottom: 0;
+    font-family: "Source Serif Pro";
+    font-size: 25px;
+    font-weight: 100;
 }
